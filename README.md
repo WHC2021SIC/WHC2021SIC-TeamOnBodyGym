@@ -17,7 +17,7 @@ Find more information on his [website](https://sites.google.com/view/aashikazim/
 
 <img alt="Archana's picture" src="images/portraits/Archana.jpg" width="100px" height="auto"/>
 
-Archana is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
+Archana Narayanan is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
 
 Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
 
@@ -43,7 +43,7 @@ Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglL
 
 <img alt="Seongkook's picture" src="images/portraits/Seongkook.jpg" width="100px" height="auto"/>
 
-Seongkook is an Assistant Professor in the Department of Computer Science at the University of Virginia. His research interests span across various areas of human-computer interaction, with an emphasis on interaction techniques and technologies. He was previously a postdoctoral researcher in the DGP Lab at the University of Toronto, where he worked with Prof. Daniel Wigdor. He received his PhD in Computer Science at the KAIST in 2017, advised by Prof. Geehyuk Lee. He was also a research intern at industry research labs, including Samsung Advanced Institute of Technology, Microsoft Research (with Dr. Ken Hinckley), and Autodesk Research (with Dr. Tovi Grossman).
+Seongkook Heo is an Assistant Professor in the Department of Computer Science at the University of Virginia. His research interests span across various areas of human-computer interaction, with an emphasis on interaction techniques and technologies. He was previously a postdoctoral researcher in the DGP Lab at the University of Toronto, where he worked with Prof. Daniel Wigdor. He received his PhD in Computer Science at the KAIST in 2017, advised by Prof. Geehyuk Lee. He was also a research intern at industry research labs, including Samsung Advanced Institute of Technology, Microsoft Research (with Dr. Ken Hinckley), and Autodesk Research (with Dr. Tovi Grossman).
 
 Find more information on his [website](https://seongkookheo.com).
 
