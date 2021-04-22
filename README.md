@@ -1,28 +1,56 @@
-# WHC2021SIC Project Template
-
-<!-- Replace Project Template by your team name in title and description -->
-
-Project Template for the IEEE World Haptics Conference 2021 Student Innovation Challenge
-
-https://2021.worldhaptics.org/sic/
+# On-Body Gym
 
 ## Authors
 
 ### Team
-
 <!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
 
-#### Name
+#### Md Aashikur Rahman Azim
+###### Preferred Pronouns: He/Him/His
 
-<img alt="Name's picture" src="images/portraits/Name.jpg" width="100px" height="auto"/>
+<img alt="Aashik's picture" src="images/portraits/Aashik.jpg" width="100px" height="auto"/>
 
-Name is ... <!-- insert biography -->
- 
-Find more information on their <!-- update pronouns--> [website](https://).
+Md Aashikur Rahman Azim is a third-year computer science Ph.D. student at the University of Virginia (UVa). Aashik is currently working with Professor Seongkook Heo on wearable user interfaces in the context of Human-Computer Interaction (HCI). He received both Bachelor of Science and Master of Science degrees from the Department of Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET) in February 2013 and December 2016, respectively. His research area includes Human-Computer Interaction, Applied Machine Learning, and Embedded Systems.
 
-<!-- ### Advisor -->
+Find more information on his [website](https://sites.google.com/view/aashikazim/).
 
-<!-- Uncomment this section title and add a #### Name subsection if your team appointed an advisor. -->
+#### Archana Narayanan
+###### Preferred Pronouns: She/Her/Hers
+
+<img alt="Archana's picture" src="images/portraits/Archana.jpg" width="100px" height="auto"/>
+
+Archana is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
+
+Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
+
+#### Adil Rahman
+###### Preferred Pronouns: He/Him/His
+
+<img alt="Adil's picture" src="images/portraits/Adil.jpg" width="100px" height="auto"/>
+
+Adil Rahman is a first-year PhD student at the University of Virginia (UVa). Adil's research interest lies in the field of Human-Computer Interaction, particularly in making devices more accessible to everyone and creating new interaction techniques. Prior to joining the PhD program at UVa, Adil has had a year's worth of experience working with gesture recognition at the Indian Statistical Institute. Adil also holds a BTech (IT) from Heritage Institute of Technology, Kolkata, from where he graduated as a gold-medalist in 2020. In his spare time, Adil loves to play video games, make music, and then play some more video games!
+
+Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
+
+#### Wen Ying
+###### Preferred Pronouns: She/Her/Hers
+
+<img alt="Wen's picture" src="images/portraits/Wen.jpg" width="100px" height="auto"/>
+
+Wen Ying is a first-year CS PhD student at the University of Virginia. Her study involves experimenting with different types of haptic feedback from which she has had experience with creating virtual haptic feedback using LRA actuators, sensors, boards, etc.
+
+Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglLobY8OH5/view?usp=sharing) for more information.
+
+### Advisor
+
+#### Seongkook Heo
+###### Preferred Pronouns: He/Him/His
+
+<img alt="Seongkook's picture" src="images/portraits/Seongkook.jpg" width="100px" height="auto"/>
+
+Seongkook is an Assistant Professor in the Department of Computer Science at the University of Virginia. His research interests span across various areas of human-computer interaction, with an emphasis on interaction techniques and technologies. He was previously a postdoctoral researcher in the DGP Lab at the University of Toronto, where he worked with Prof. Daniel Wigdor. He received his PhD in Computer Science at the KAIST in 2017, advised by Prof. Geehyuk Lee. He was also a research intern at industry research labs, including Samsung Advanced Institute of Technology, Microsoft Research (with Dr. Ken Hinckley), and Autodesk Research (with Dr. Tovi Grossman).
+
+Find more information on his [website](https://seongkookheo.com).
 
 ### Chairs
 
@@ -77,11 +105,11 @@ Once this documentation becomes very comprehensive, the main file can be split i
 
 ## Abstract
 
-<!-- Summarize your project: for now copy the short pitch from your proposal -->
+We propose an on-body wearable system for providing a holistic workout experience using haptic feedback and ad-hoc proxy objects.
 
 ## Introduction
 
-<!-- Explain your project: for now copy the 300-word description from your proposal -->
+Impacted by the COVID-19 pandemic, gyms across the globe have either shut down or restricted total capacity. To benefit people with their mental and physical health, we propose an on-body wearable device capable of providing a holistic workout experience at home. Using granular haptic feedback, our proposed system can simulate the feeling of using actual gym equipment. The proposed system will be composed of flex sensors, force sensors, a pulse sensor, and vibrotactile actuators, all working in tandem to detect workout activity and trigger a granular haptic response to mirror the feedback received from various spring-and-pulley based machines in the gym. Additionally, our system also aims to simulate rhythm generated by music using vibrotactile actuators to promote a positive-mood and endurance during workouts. This will be especially useful for hearing impaired people who can also enjoy the rhythm of the music. Finally, our device will use a pulse sensor to determine if the user has incurred fatigue while simultaneously lowering the overall intensity of the haptic feedback to indicate the user to take rest. In general, our system is designed to encourage all types of people to pursue fitness and to enrich their home workout experience.
 
 ### Documentation
 
@@ -112,8 +140,6 @@ Made with [drawio-desktop](https://github.com/jgraph/drawio-desktop/) (online ve
 
 
 ## Acknowledgements
-
-<!-- Describe your software components -->
 
 SIC chairs would like to thank Evan Pezent, Zane A. Zook and Marcia O'Malley from [MAHI Lab](http://mahilab.rice.edu) at Rice University for having distributed to them 2 [Syntacts](https://www.syntacts.org) kits for the [IROS 2020 Intro to Haptics for XR Tutorial](http://iros-haptics-tutorial.org/). 
 SIC co-chair Christian Frisson would like to thank Edu Meneses and Johnty Wang from [IDMIL](http://idmil.org) at McGill University for their recommendations on Raspberry Pi hats for audio and sensors.
