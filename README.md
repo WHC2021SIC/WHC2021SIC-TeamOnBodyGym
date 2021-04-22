@@ -6,7 +6,6 @@
 <!-- For each team member, duplicate this following subsection and update Name, biography, pronouns and website. Please store pictures under images/portraits/ and use only Name in CamelCase for filenames. -->
 
 #### Md Aashikur Rahman Azim
-###### Preferred Pronouns: He/Him/His
 
 <img alt="Aashik's picture" src="images/portraits/Aashik.jpg" width="100px" height="auto"/>
 
@@ -15,7 +14,6 @@ Md Aashikur Rahman Azim is a third-year computer science Ph.D. student at the Un
 Find more information on his [website](https://sites.google.com/view/aashikazim/).
 
 #### Archana Narayanan
-###### Preferred Pronouns: She/Her/Hers
 
 <img alt="Archana's picture" src="images/portraits/Archana.jpg" width="100px" height="auto"/>
 
@@ -24,7 +22,6 @@ Archana is an MS student in Computer Engineering at the University of Virginia, 
 Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
 
 #### Adil Rahman
-###### Preferred Pronouns: He/Him/His
 
 <img alt="Adil's picture" src="images/portraits/Adil.jpg" width="100px" height="auto"/>
 
@@ -33,9 +30,8 @@ Adil Rahman is a first-year PhD student at the University of Virginia (UVa). Adi
 Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
 
 #### Wen Ying
-###### Preferred Pronouns: She/Her/Hers
 
-<img alt="Wen's picture" src="images/portraits/Wen.jpg" width="100px" height="auto"/>
+<img alt="Wen's picture" src="images/portraits/Wen.jpeg" width="100px" height="auto"/>
 
 Wen Ying is a first-year CS PhD student at the University of Virginia. Her study involves experimenting with different types of haptic feedback from which she has had experience with creating virtual haptic feedback using LRA actuators, sensors, boards, etc.
 
@@ -44,7 +40,6 @@ Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglL
 ### Advisor
 
 #### Seongkook Heo
-###### Preferred Pronouns: He/Him/His
 
 <img alt="Seongkook's picture" src="images/portraits/Seongkook.jpg" width="100px" height="auto"/>
 
