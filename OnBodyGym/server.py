@@ -76,6 +76,7 @@ def set_grain_volume():
     return "OK"
 
 def run_server(host=HOST, port=PORT):
+    controller.enable_dsp()
     app.run(host=host, port=port)
     
 if __name__ == "__main__":
