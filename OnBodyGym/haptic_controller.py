@@ -89,6 +89,7 @@ class HapticController():
     
     def set_grain_volume(self, channel, volume):
         channel = self.PUREDATA_MAP[int(channel)]
+        print("5 " + str(channel) + " " + str(volume))
         self.send_command("5 " + str(channel) + " " + str(volume))
     
     def enable_test_tone(self, channel):

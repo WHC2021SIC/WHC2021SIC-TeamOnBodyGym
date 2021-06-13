@@ -75,7 +75,7 @@ def read_sensor_data(verbose=False):
 def get_volume(mod_value):
     volume = mod_value/10
     volume = 1000 * pow(volume, 2)
-    return volume
+    return int(volume)
     
 
 def generate_feedback(values_hand, values_leg):

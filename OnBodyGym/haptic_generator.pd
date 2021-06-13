@@ -1,4 +1,4 @@
-#N canvas 405 98 2133 1213 10;
+#N canvas 0 96 1920 984 10;
 #X msg 327 106 \; pd dsp \$1;
 #X obj 67 54 netreceive 3000;
 #X obj 114 190 s toggle_dsp;
@@ -126,7 +126,7 @@
 #X msg 1132 236 open grain.wav;
 #X obj 1080 263 readsf~ 1;
 #X obj 1079 293 *~ 50;
-#X obj 1340 384 r set_grain_volume;
+#X obj 1339 393 r set_grain_volume;
 #X obj 1080 322 dac~ 3;
 #X msg 1243 235 start;
 #X msg 1295 235 open grain.wav;
@@ -182,9 +182,10 @@
 #X obj 1925 187 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 1333 43 Grain Vibration Routing;
-#X text 1339 406 Grain Vibration Volume Control;
+#X text 1339 439 Grain Vibration Volume Control;
 #X text 321 304 Tone Test Routing;
 #X obj 98 212 s set_music_volume;
+#X obj 1339 419 route 1 2 3 4 5 6 7 8;
 #X connect 1 0 74 0;
 #X connect 3 0 6 0;
 #X connect 6 0 0 0;
@@ -333,14 +334,7 @@
 #X connect 115 0 116 0;
 #X connect 116 0 117 0;
 #X connect 117 0 119 0;
-#X connect 118 0 117 1;
-#X connect 118 0 123 1;
-#X connect 118 0 127 1;
-#X connect 118 0 131 1;
-#X connect 118 0 135 1;
-#X connect 118 0 139 1;
-#X connect 118 0 159 1;
-#X connect 118 0 155 1;
+#X connect 118 0 169 0;
 #X connect 120 0 122 0;
 #X connect 121 0 122 0;
 #X connect 122 0 123 0;
@@ -394,3 +388,11 @@
 #X connect 163 0 132 0;
 #X connect 164 0 137 0;
 #X connect 164 0 136 0;
+#X connect 169 0 155 1;
+#X connect 169 1 159 1;
+#X connect 169 2 117 1;
+#X connect 169 3 123 1;
+#X connect 169 4 127 1;
+#X connect 169 5 131 1;
+#X connect 169 6 135 1;
+#X connect 169 7 139 1;
