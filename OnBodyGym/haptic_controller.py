@@ -6,7 +6,7 @@ class HapticController():
         self.PUREDATA_PORT = port
         self.PUREDATA_MAP = [1, 2, 3, 4, 5, 6, 7, 8]
         self.SYNTACTS_MUSIC_CH1 = 6
-        self.SYNTACTS_MUSIC_CH1 = 7
+        self.SYNTACTS_MUSIC_CH2 = 7
     
     def get_pd_mapped_channel(self, channel):
         return self.PUREDATA_MAP[channel]
@@ -66,8 +66,8 @@ class HapticController():
         if channel_1 == -1 or channel_2 == -1:
             channel_1 = self.SYNTACTS_MUSIC_CH1
             channel_2 = self.SYNTACTS_MUSIC_CH2
-        ch1 = self.PUREDATA_MAP(channel_1)
-        ch2 = self.PUREDATA_MAP(channel_2)
+        ch1 = self.PUREDATA_MAP[channel_1]
+        ch2 = self.PUREDATA_MAP[channel_2]
         self.send_command("1 {} {} {}".format(ch1, ch2, music_idx));
 
     def set_music_volume(self, volume):
