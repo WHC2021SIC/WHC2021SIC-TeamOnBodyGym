@@ -13,7 +13,7 @@ controller = HapticController()
 def home():
     return "OnBodyGym Server"
 
-@app.route("/play_music", methods=["GET"])
+@app.route("/play", methods=["GET"])
 def play_music():
     music_idx = request.args.get("music_idx")
     volume = request.args.get("volume")
@@ -31,7 +31,7 @@ def play_music():
         controller.play_music(music_idx)
     return "OK"
 
-@app.route("/stop_music")
+@app.route("/stop")
 def stop_music():
     controller.enable_dsp()
     controller.stop_music()
@@ -60,12 +60,19 @@ def play_grain():
 @app.route("/set_grain_volume", methods=["GET"])
 def set_grain_volume():
     volume = request.args.get("volume")
+    channel = request.args.get("channel")
     if not volume:
         volume = 70
+    if not channel:
+        channel = [1, 2, 3, 4, 5, 6, 7, 8]
+    else:
+        channel = list(channel)
+        
     volume = float(volume) / 100
     volume = 1000 * pow(volume, 2)
     controller.enable_dsp()
-    controller.set_grain_volume(volume)
+    for ch in channel:
+        controller.set_grain_volume(ch, volume)
     return "OK"
 
 def run_server(host=HOST, port=PORT):

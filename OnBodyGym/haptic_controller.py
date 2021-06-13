@@ -52,8 +52,8 @@ class HapticController():
     f. Enable DSP             : 3 1
     g. Play Grain:            : 4 [1 - 8]
          Plays grain on the specified audio channel between 1 and 8
-    h. Set Grain Volume       : 5 [0.00 - 1000.00]
-         Argument is a float value, 0 mutes the volume.
+    h. Set Grain Volume       : 5 [1 - 8] [0.00 - 1000.00]
+         First argument is an integer value containing output channel between 1 and 8, second argument is a float value, 0 mutes the volume.
     i. Toggle Test Tone       : 6 [1 - 8] [0 - 1]
          First argument defines output channel between 1 and 8, the second argument defines test tone as ON (1) or OFF (0)
 
@@ -62,7 +62,10 @@ class HapticController():
     def stop_music(self):
         self.send_command("0")
 
-    def play_music(self, music_idx, channel_1=self.SYNTACTS_MUSIC_CH1, channel_2=self.SYNTACTS_MUSIC_CH2):
+    def play_music(self, music_idx, channel_1=-1, channel_2=-1):
+        if channel_1 == -1 or channel_2 == -1:
+            channel_1 = self.SYNTACTS_MUSIC_CH1
+            channel_2 = self.SYNTACTS_MUSIC_CH2
         ch1 = self.PUREDATA_MAP(channel_1)
         ch2 = self.PUREDATA_MAP(channel_2)
         self.send_command("1 {} {} {}".format(ch1, ch2, music_idx));
@@ -84,8 +87,9 @@ class HapticController():
         channel = self.PUREDATA_MAP[int(channel)]
         self.send_command("4 " + str(channel))
     
-    def set_grain_volume(self, volume):
-        self.send_command("5 " + str(volume))
+    def set_grain_volume(self, channel, volume):
+        channel = self.PUREDATA_MAP[int(channel)]
+        self.send_command("5 " + str(channel) + " " + str(volume))
     
     def enable_test_tone(self, channel):
         self.send_command("6 " + str(channel) + " 1");
