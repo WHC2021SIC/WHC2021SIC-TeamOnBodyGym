@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    tools:context=".DeveloperConsoleActivity">
+
+    <LinearLayout
+        android:id="@+id/jukeboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/statusBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="Developer Console"
+            android:gravity="center_vertical"
+            android:textColor="#EEEEEE"
+            android:fontFamily="sans-serif-black"
+            android:textSize="32sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Test LRA Channels"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ch0"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="0"
+                        android:tag="channel0"
+                        android:tooltipText="Right Leg"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch1"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <Button
+                        android:id="@+id/ch1"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="1"
+                        android:tag="channel1"
+                        android:tooltipText="Left Leg"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch2"
+                        app:layout_constraintLeft_toRightOf="@id/ch0"/>
+
+                    <Button
+                        android:id="@+id/ch2"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="2"
+                        android:tag="channel2"
+                        android:tooltipText="Right Wrist"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch3"
+                        app:layout_constraintLeft_toRightOf="@id/ch1"/>
+
+                    <Button
+                        android:id="@+id/ch3"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="3"
+                        android:tag="channel3"
+                        android:tooltipText="Left Wrist"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/ch2"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ch4"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="4"
+                        android:tag="channel4"
+                        android:tooltipText="Right Elbow"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch5"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <Button
+                        android:id="@+id/ch5"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="5"
+                        android:tag="channel5"
+                        android:tooltipText="Left Elbow"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch6"
+                        app:layout_constraintLeft_toRightOf="@id/ch4"/>
+
+                    <Button
+                        android:id="@+id/ch6"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="6"
+                        android:tag="channel6"
+                        android:tooltipText="Right Ear"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/ch7"
+                        app:layout_constraintLeft_toRightOf="@id/ch5"/>
+
+                    <Button
+                        android:id="@+id/ch7"
+                        android:layout_width="64dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:backgroundTint="#383838"
+                        android:text="7"
+                        android:tag="channel7"
+                        android:tooltipText="Left Ear"
+                        android:onClick="testGrainVibration"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/ch6"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sensor Readings"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flexWrap="wrap">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Left Wrist FSR"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/leftWristFSR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Right Wrist FSR"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/rightWristFSR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Left Elbow Flex"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/leftElbowFlex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Right Elbow Flex"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/rightElbowFlex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Left Knee Flex"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/leftKneeFlex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="4dp"
+                        android:orientation="vertical"
+                        app:layout_flexBasisPercent="50%">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Right Knee Flex"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/rightKneeFlex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="NA"
+                            android:textColor="#EEEEEE"
+                            android:fontFamily="sans-serif-medium"
+                            android:textSize="32sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FF4136"
+                    android:text="Reset Audio DSP"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:onClick="resetDSP" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/settingsButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="#222222"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:onClick="openSettings" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- STATUS BAR -->
+    <FrameLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Checking for connection..."
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

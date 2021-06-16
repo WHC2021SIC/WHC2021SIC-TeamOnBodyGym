@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131313"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:id="@+id/jukeboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/statusBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Settings"
+            android:gravity="center_vertical"
+            android:textColor="#EEEEEE"
+            android:fontFamily="sans-serif-black"
+            android:textSize="32sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Raspberry Pi Server"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Modify Raspberry Pi IP Address"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="IP Address"
+                    app:boxStrokeColor="@color/white"
+                    app:hintTextColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:placeholderTextColor="@color/white"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ipAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textColorLink="@color/white"
+                        android:textColorHighlight="@color/white"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0074D9"
+                    android:text="Set Connection"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:onClick="setConnection" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Test On-Body Sensors and Actuators"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/developerConsole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#3D9970"
+                    android:text="Developer Console"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:onClick="openDeveloperConsole"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Haptic Feedback Intensity"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Adjust Music Intensity"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/musicSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Volume Slider"
+                    app:trackColor="@color/white"
+                    app:thumbColor="@color/white"
+                    app:haloColor="@color/white"
+                    app:tickColorInactive="@color/black"
+                    android:value="75"
+                    android:valueFrom="0"
+                    android:stepSize="1"
+                    android:valueTo="100" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Adjust On-Body Gym Feedback Intensity"
+                    android:gravity="center_vertical"
+                    android:textColor="#EEEEEE"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/grainSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Grain Slider"
+                    app:trackColor="@color/white"
+                    app:thumbColor="@color/white"
+                    app:haloColor="@color/white"
+                    app:tickColorInactive="@color/black"
+                    android:value="75"
+                    android:valueFrom="0"
+                    android:stepSize="1"
+                    android:valueTo="100" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/settingsButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="#222222"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:onClick="openJukebox" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- STATUS BAR -->
+    <FrameLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Checking for connection..."
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
