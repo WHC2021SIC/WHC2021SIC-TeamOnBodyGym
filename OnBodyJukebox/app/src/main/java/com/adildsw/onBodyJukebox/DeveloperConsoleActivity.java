@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -17,6 +18,10 @@ public class DeveloperConsoleActivity extends AppCompatActivity {
 
     TextView leftWristFSR, leftElbowFlex, leftKneeFlex;
     TextView rightWristFSR, rightElbowFlex, rightKneeFlex;
+
+    Button toggleMonitoringBtn;
+
+    boolean isMonitoring = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,8 @@ public class DeveloperConsoleActivity extends AppCompatActivity {
         rightElbowFlex = findViewById(R.id.rightElbowFlex);
         rightKneeFlex = findViewById(R.id.rightKneeFlex);
 
+        toggleMonitoringBtn = findViewById(R.id.toggleMonitoring);
+
         utils = new Utils();
         utils.setNotificationBarColor(getWindow(), "#080808");
 
@@ -41,13 +48,24 @@ public class DeveloperConsoleActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                updateUISensorValues();
+                if (isMonitoring) {
+                    updateUISensorValues();
+                }
+                else {
+                    rightWristFSR.setText("NA");
+                    leftWristFSR.setText("NA");
+                    rightElbowFlex.setText("NA");
+                    leftElbowFlex.setText("NA");
+                    rightKneeFlex.setText("NA");
+                    leftKneeFlex.setText("NA");
+                }
                 handler.postDelayed(this, 100);
             }
-        }, 100);
+        }, 500);
     }
 
     public void openSettings(View view) {
+        toggleMonitoring(false);
         startActivity(new Intent(getApplicationContext(), SettingsActivity.class));
     }
 
@@ -116,8 +134,22 @@ public class DeveloperConsoleActivity extends AppCompatActivity {
         });
     }
 
+    public void toggleMonitoring(View view) {
+        toggleMonitoring(!isMonitoring);
+    }
+
+    public void toggleMonitoring(boolean enabled) {
+        isMonitoring = enabled;
+        if (isMonitoring) {
+            toggleMonitoringBtn.setText("Stop Monitoring");
+        }
+        else {
+            toggleMonitoringBtn.setText("Start Monitoring");
+        }
+    }
+
     public void resetDSP(View view) {
-        String uri = ip + "/resetDSP";
+        String uri = ip + "/reset_dsp";
         setStatus(StatusMode.CONNECTING);
         utils.getRequest(uri, getApplicationContext(), new HttpRequestListener() {
             @Override

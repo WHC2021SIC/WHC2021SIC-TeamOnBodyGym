@@ -14,6 +14,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Utils {
 
     private int PORT = 11996;
@@ -36,6 +39,34 @@ public class Utils {
                 requestListener.onError(error.toString());
             }
         });
+
+        queue.add(request);
+    }
+
+    public void uploadCustomAudio(String uri, Context context, HttpRequestListener requestListener, String customAudio) {
+        if (!uri.startsWith("http")) {
+            uri = "http://" + uri;
+        }
+
+        RequestQueue queue = Volley.newRequestQueue(context);
+        StringRequest request = new StringRequest(Request.Method.POST, uri, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                requestListener.onResponse(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                requestListener.onError(error.toString());
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("custom_audio", customAudio);
+                return params;
+            }
+        };
 
         queue.add(request);
     }

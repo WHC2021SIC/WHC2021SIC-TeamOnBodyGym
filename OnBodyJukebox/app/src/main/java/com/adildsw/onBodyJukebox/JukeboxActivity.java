@@ -2,9 +2,12 @@ package com.adildsw.onBodyJukebox;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -38,6 +41,14 @@ public class JukeboxActivity extends AppCompatActivity {
         ip = utils.getIPAddress(getApplicationContext());
         checkConnection(ip);
 
+        findViewById(R.id.music5).setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                uploadCustomMusic();
+                return false;
+            }
+        });
+
     }
 
     public void checkConnection(String ip) {
@@ -70,6 +81,7 @@ public class JukeboxActivity extends AppCompatActivity {
         int musicPlayIconId = getResources().getIdentifier(
                 musicTag + "play", "id", getPackageName());
         ImageView musicPlayIcon = findViewById(musicPlayIconId);
+        Log.e("ERR", String.valueOf(musicIdx));
 
         if (nowPlaying == -1) {
             // Playing Music
@@ -125,8 +137,24 @@ public class JukeboxActivity extends AppCompatActivity {
             @Override
             public void onResponse(Object response) {
                 if (play) {
-                    Toast.makeText(JukeboxActivity.this,
-                            "Playing " + JUKEBOX_LIBRARY[musicIdx], Toast.LENGTH_SHORT).show();
+                    if (musicIdx != 5) {
+                        Toast.makeText(JukeboxActivity.this,
+                                "Playing " + JUKEBOX_LIBRARY[musicIdx], Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        if (response.toString().equals("OK")) {
+                            Toast.makeText(JukeboxActivity.this,
+                                    "Playing " + JUKEBOX_LIBRARY[musicIdx]
+                                            + ". Hold button to change custom music.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            Toast.makeText(JukeboxActivity.this,
+                                    "No custom music loaded. Hold button to load custom music.",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
                     setStatus(StatusMode.CONNECTED);
                 }
                 else {
@@ -136,6 +164,16 @@ public class JukeboxActivity extends AppCompatActivity {
         });
 
         return true;
+    }
+
+    public void uploadCustomMusic() {
+        String api = ip + "/uploader";
+        if (!api.startsWith("http://")) {
+            api = "http://" + api;
+        }
+
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(api));
+        startActivity(browserIntent);
     }
 
     public void setStatus(StatusMode mode) {

@@ -369,6 +369,18 @@
                 </com.google.android.flexbox.FlexboxLayout>
 
                 <Button
+                    android:id="@+id/toggleMonitoring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#666666"
+                    android:text="Start Monitoring"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:onClick="toggleMonitoring" />
+
+                <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FF4136"
