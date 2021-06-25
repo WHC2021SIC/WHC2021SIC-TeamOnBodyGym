@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>On-Body Gym Music Uploader</title>
+  <link rel="stylesheet" href="web/bulma.min.css"/>
+  <link rel="shortcut icon" type="image/png" href="web/OBGIcon.png"/>
+  <script>
+    function toggleExecBT() {
+      var execBT = document.getElementById('executeBT');
+      var fileInput = document.getElementById('fileInput');
+      var fileText = document.getElementById('fileText');
+
+      if (fileInput.files[0].name == '') {
+        execBT.disabled = true;
+      } else {
+        execBT.disabled = false;
+      }
+
+      if (fileInput.files[0].name != '') {
+        fileText.innerText = fileInput.files[0].name;
+      }
+    }
+  </script>
+  <style>
+	#main {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+  </style>
+</head>
+
+<body>
+	<div id="main" class="box">
+		<h1 class="title">On-Body Gym</h1>
+		<h2 class="subtitle">Custom Music Uploader</h2>
+        <form action='/upload_custom_audio' method='POST' enctype="multipart/form-data">
+		
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="file has-name is-fullwidth">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="file" id="fileInput" accept="audio/wav" onchange="toggleExecBT()">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <img src="web/upload.png"></img>
+                        </span>
+                        <span class="file-label">
+                          Choose WAV File
+                        </span>
+                      </span>
+                      <span class="file-name" id="fileText">
+                        No File Selected
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-horizontal">
+              <div class="field-body">
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-primary is-fullwidth" id="executeBT" type="submit" disabled>
+                      Upload
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </form>
+	</div>
+</body>
+</html>

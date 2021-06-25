@@ -10,6 +10,8 @@ controller = HapticController()
 
 GAIN = 1
 
+grain_volume_multiplier = 1
+
 right_feedback_volume = 0
 left_feedback_volume = 0
 
@@ -78,7 +80,7 @@ def get_volume(mod_value):
     return int(volume)
     
 
-def generate_feedback(values_hand, values_leg):
+def generate_feedback(values_hand, values_leg, verbose=False):
     global right_feedback_volume, left_feedback_volume
     
     # Wrist Feedback
@@ -89,16 +91,18 @@ def generate_feedback(values_hand, values_leg):
     if int(rh_fsr/100) != rh_fsr_mod:
         rh_fsr_mod = int(rh_fsr/100)
         right_feedback_volume = get_volume(rh_fsr_mod)
-        controller.set_grain_volume(RIGHT_WRIST_LRA, right_feedback_volume)
+        controller.set_grain_volume(RIGHT_WRIST_LRA, grain_volume_multiplier * right_feedback_volume)
         controller.play_grain(RIGHT_WRIST_LRA)
-        print("RW " + str(rh_fsr))
+        if verbose:
+            print("RW " + str(rh_fsr))
     
     if int(lh_fsr/100) != lh_fsr_mod:
         lh_fsr_mod = int(lh_fsr/100)
         left_feedback_volume = get_volume(lh_fsr_mod)
-        controller.set_grain_volume(LEFT_WRIST_LRA, left_feedback_volume)
+        controller.set_grain_volume(LEFT_WRIST_LRA, grain_volume_multiplier * left_feedback_volume)
         controller.play_grain(LEFT_WRIST_LRA)
-        print("LW " + str(lh_fsr))
+        if verbose:
+            print("LW " + str(lh_fsr))
     
     
     # Elbow Feedback
@@ -108,15 +112,17 @@ def generate_feedback(values_hand, values_leg):
     
     if int(rh_flex/10) != rh_flex_mod:
         rh_flex_mod = int(rh_flex/10)
-        controller.set_grain_volume(RIGHT_ELBOW_LRA, right_feedback_volume)
+        controller.set_grain_volume(RIGHT_ELBOW_LRA, grain_volume_multiplier * right_feedback_volume)
         controller.play_grain(RIGHT_ELBOW_LRA)
-        print("RE " + str(rh_flex))
+        if verbose:
+            print("RE " + str(rh_flex))
         
     if int(lh_flex/10) != lh_flex_mod:
         lh_flex_mod = int(lh_flex/10)
-        controller.set_grain_volume(LEFT_ELBOW_LRA, left_feedback_volume)
+        controller.set_grain_volume(LEFT_ELBOW_LRA, grain_volume_multiplier * left_feedback_volume)
         controller.play_grain(LEFT_ELBOW_LRA)
-        print("LE " + str(lh_flex))
+        if verbose:
+            print("LE " + str(lh_flex))
     
     
     # Leg Feedback
@@ -126,21 +132,33 @@ def generate_feedback(values_hand, values_leg):
     
     if int(rl_flex/10) != rl_flex_mod:
         rl_flex_mod = int(rl_flex/10)
-        controller.set_grain_volume(RIGHT_LEG_LRA, right_feedback_volume)
+        controller.set_grain_volume(RIGHT_LEG_LRA, grain_volume_multiplier * right_feedback_volume * 10)
         controller.play_grain(RIGHT_LEG_LRA)
-        print("RL " + str(rl_flex))
+        if verbose:
+            print("RL " + str(rl_flex))
         
     if int(ll_flex/10) != ll_flex_mod:
         ll_flex_mod = int(ll_flex/10)
-        controller.set_grain_volume(LEFT_LEG_LRA, left_feedback_volume)
+        controller.set_grain_volume(LEFT_LEG_LRA, grain_volume_multiplier * left_feedback_volume * 10)
         controller.play_grain(LEFT_LEG_LRA)
-        print("LL " + str(ll_flex))
+        if verbose:
+            print("LL " + str(ll_flex))
         
+def update_grain_volume_multiplier():
+    global grain_volume_multiplier
+    try:
+        f = open("grain_volume_multiplier.config", "r")
+        grain_volume_multiplier = float(f.read())
+        f.close()
+    except Exception as e:
+        print("Sensor Reader Error: File I/O Exception " + e)
+        grain_volume_multiplier = 1
 
 def main():
     while True:
+        update_grain_volume_multiplier()
         values_hand, values_leg = read_sensor_data(False)
-        generate_feedback(values_hand, values_leg)
+        generate_feedback(values_hand, values_leg, False)
         
 
 if __name__ == "__main__":
