@@ -1,7 +1,9 @@
 # On-Body Gym
 **Feel the Vibe: A Wearable On-Body Gym Simulator**
 
-![On-Body Gym Concept](https://user-images.githubusercontent.com/34148735/121788886-34bd6c80-cb9f-11eb-9b51-71b0570a05cd.png)
+![Project Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/FeelTheVibeBanner.png)
+
+![Concept Art](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/front_side_integrated.png)
 
 ## Abstract
 
@@ -34,6 +36,8 @@ Introduction goes here.
 Want to experience On-Body Gym for yourself? Follow our step-by-step guide to build your own On-Body Gym system!
 
 ## Step 1: Acquiring the Hardware
+
+![Primary Hardware Components](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/PrimaryHardware.png)
 
 The hardware requirements for building the On-Body Gym are categorised as follows:
 
@@ -82,7 +86,7 @@ The hardware requirements for building the On-Body Gym are categorised as follow
 * Cardboard Box (17mm L x 11mm B x 9mm D)
 
 #### Tools
-Assembling the On-Body Gym will require the usual workshop tools which include (but may not be limited to): scissor, screw-drivers, blade, soldering kit, shrink tubes (optional, for wrapping up the soldered-joints), and a heat gun (optional, for shrinking the shrink tube).
+Assembling the On-Body Gym will require the usual workshop tools which include (but may not be limited to): scissor, screw-drivers, blade, soldering kit, shrink tubes (optional, for wrapping up the soldered-joints), and a heat gun (optional, for shrinking the shrink tube). A cheaper alternative to shrink tubes and heat gun is an electrical tape, which can also be used to wrap up soldered joints.
 
 ## Step 2: Preparing the Hardware
 Before we start connecting the hardware together, we need to prepare some components first.
@@ -94,7 +98,7 @@ The SparkFun 12-bit 4-channel ADC board has a default I2C address of 0x48. Howev
 The ADC boards have a 10k ohm potentiometer connected to their AIN3 ports which disturbs the sensor readings. Thus, we need to disconnect the potentiometer. Follow [this tutorial](https://learn.sparkfun.com/tutorials/qwiic-12-bit-adc-hookup-guide/hardware-overview) (under Jumpers > Potentiometer) to learn more about how to cut this potentiometer.
 
 #### Adding Females Jumpers to the Linear Resonant Actuators
-From the ribbon cable, take out 8 sets of 2-wired cables with length of at least 1 meter. Slightly peel off both ends of the cables to expose the wires. Solder one end of each of the 2-wired cable ends with a linear resonant actuator. Now, cut the female-to-female jumper wires in half, and peel off the ends of the cables to expose the wire. Now, for each of the 8 sets of 2-wired ribbon cables soldered to the linear resonant actuators, solder the other end of the cable with the jumper wires. This will result in 8 linear resonant actuator assemblies, with each actuator having two female jumpers at the end of a 1 meter long cable.
+From the ribbon cable, take out 8 sets of 2-wired cables with length of at least 1 meter. Slightly peel off both ends of the cables to expose the wires. Solder one end of each of the 2-wired cable ends with a linear resonant actuator. Now, cut the female-to-female jumper wires in half, and peel off the ends of the cables to expose the wire. Now, for each of the 8 sets of 2-wired ribbon cables soldered to the linear resonant actuators, solder the other end of the cable with the jumper wires. This will result in 8 linear resonant actuator assemblies, with each actuator having two female jumpers at the end of a 1 meter long cable. If done correctly, the end result should look similar to the linear resonant actuator assembly shown [here](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/PrimaryHardware.png?raw=true).
 
 * **Recommendation:** While taking out 8 sets of 1 meter 2-wired cables, try to take out 4 sets of 2 meter 2-wired cables first, each pair having a different color combination, and then cut these 4 sets in half to make 8 sets of 1 meter 2-wired cables. Doing this will result in each color combination have 2 sets of 1 meter 2-wired cables, which will help immensely with wire management in the later part of the build.
 * **Recommendation:** It is highly recommended to use shrink tubes at the solder joints and heat it with a heat gun. This will not only protect the system from short-circuits and strengthen the overall structure of the system but will also make the system more comfortable to mount at a later stage.
@@ -105,6 +109,8 @@ Similar to the previous step involving the linear resonant actuators, we need to
 
 ## Step 3: Hardwares, Assemble!
 Once the hardware components are prepared, it is now finally time to assemble them!
+
+![Sensor Wiring](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/SensorWiring.png)
 
 ## Step 4: Put 'em in a Box, Tie 'em with a Ribbon
 Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
