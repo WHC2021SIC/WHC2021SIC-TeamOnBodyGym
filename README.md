@@ -20,7 +20,8 @@ Introduction goes here.
     + [Step 1: Acquiring the Hardware](#step-1-acquiring-the-hardware)
     + [Step 2: Preparing the Hardware](#step-2-preparing-the-hardware)
     + [Step 3: Hardwares, Assemble!](#step-3-hardwares-assemble)
-    + [Step 4: Put 'em in a Box, Tie 'em with a Ribbon](#step-4-put-em-in-a-box-tie-em-with-a-ribbon)
+    + [Step 4: Loading the Software](#step-4-loading-the-software)
+    + [Step 5: Put 'em in a Box, Tie 'em with a Ribbon](#step-5-put-em-in-a-box-tie-em-with-a-ribbon)
 - [A User's Guide to Wearing the On-Body Gym](#a-users-guide-to-wearing-the-on-body-gym)
 - [Interacting with the On-Body Gym](#interacting-with-the-on-body-gym)
 - [On-Body Jukebox](#on-body-jukebox)
@@ -41,19 +42,19 @@ Want to experience On-Body Gym for yourself? Follow our step-by-step guide to bu
 
 The hardware requirements for building the On-Body Gym are categorised as follows:
 
-#### Primary Electronic Components
+### Primary Electronic Components
 * [Raspberry Pi 4 Microcontroller 8GB](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
 * [Audio Injector Octo 8-Channel Sound Card](http://www.audioinjector.net/rpi-octo-hat)
 * [Syntacts 8-Channel Amplifier Board](https://www.syntacts.org)
 
-#### Sensors, Actuators, and Microcontroller Modules
+### Sensors, Actuators, and Microcontroller Modules
 * [SparkFun Qwiic Hat for Raspberry Pi](https://www.sparkfun.com/products/14459)
 * [SparkFun Qwiic 12-Bit 4-Channel ADC](https://www.sparkfun.com/products/15334) (2 count)
 * [Force Sensitive Resistors 0.5"](https://www.sparkfun.com/products/9375) (2 count)
 * [Flex Sensor 4.5"](https://www.sparkfun.com/products/8606) (4 count)
 * [Coin Linear Resonant Actuator](https://www.vibration-motor.com/coin-vibration-motors/coin-linear-resonant-actuators-lra/g1040003d) (8 count)
 
-#### For Connecting Things Together
+### For Connecting Things Together
 * [2-RCA Male to 3.5mm Male](https://www.amazon.com/eBoot-3-5mm-Audio-Stereo-Adapter/dp/B06XC5KWJN/) (4 count) <br>
     - **Cable Length Recommendation:** Short, approximately 6 inches in length.
 * [Qwiic Cable](https://www.sparkfun.com/products/14426) (2 count) <br>
@@ -72,12 +73,13 @@ The hardware requirements for building the On-Body Gym are categorised as follow
 * **[OPTIONAL]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) <br>
     - **Recommentation:** This is only required to power the Syntacts board. Alternatively, a USB cable with exposed VCC and GND wires can also be used along with a power bank or USB-outlet. <br>
 
-#### Other Electronic Components
+### Other Electronic Components
+* [16GB MicroSDHC Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNS-016G-GN3MN-UHS-I-microSDHC/dp/B074B4P7KD)
 * [1k Ohm Resistor](https://www.sparkfun.com/products/14492) (6 count)
 * **[OPTIONAL]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) <br>
     - **Recommendation:** This is HIGHLY RECOMMENDED in order to allow for an untethered experience.
 
-#### Non-Electronic Components for Assembling the System
+### Non-Electronic Components for Assembling the System
 * [Knee-Length Socks](https://www.amazon.com/gp/product/B07H2WGKVB) (at least 4 pairs)
 * [Velcro Cable Ties](https://www.amazon.com/gp/product/B001E1Y5O6) (approximately 30 pieces) <br>
     - **Recommendation:** Cable Ties and Socks are used to hold components in place. These are highly recommended, but alternatively any string with significant tensile strength can be used to tie the components on the user's body, not recommended though.
@@ -85,36 +87,228 @@ The hardware requirements for building the On-Body Gym are categorised as follow
     - **Recommendation:** Band-Aids are used for holding components against the skin since they are considered as skin-safe adhesives, but alternatively regular tapes could also be used, not recommended though.
 * Cardboard Box (17mm L x 11mm B x 9mm D)
 
-#### Tools
+### Tools
 Assembling the On-Body Gym will require the usual workshop tools which include (but may not be limited to): scissor, screw-drivers, blade, soldering kit, shrink tubes (optional, for wrapping up the soldered-joints), and a heat gun (optional, for shrinking the shrink tube). A cheaper alternative to shrink tubes and heat gun is an electrical tape, which can also be used to wrap up soldered joints.
 
 ## Step 2: Preparing the Hardware
 Before we start connecting the hardware together, we need to prepare some components first.
 
-#### Changing ADC Board I2C Address
+### Changing ADC Board I2C Address
 The SparkFun 12-bit 4-channel ADC board has a default I2C address of 0x48. However, this address may conflict with other components on the Raspberry Pi board. Thankfully, the ADC board offers 3 additional I2C address to choose from (0x49, 0x4A, and 0x4B). Thus, in order to avoid an address conflict, we need to manually change the I2C address of both the ADC boards. Follow [this tutorial](https://learn.sparkfun.com/tutorials/qwiic-12-bit-adc-hookup-guide/hardware-overview) (under Jumpers > I2C Address) to learn how to change I2C address of this ADC board. Based on this tutorial, first cut the connection to the 0x48 address for both the ADC boards (remember we have 2 counts of the ADC board), then make connection to address 0x49 for one of the ADC boards, and another connection to address 0x4A for the other ADC boards.
 
-#### Disconnecting the 10kΩ Potentiometer of the ADC Boards
+### Disconnecting the 10kΩ Potentiometer of the ADC Boards
 The ADC boards have a 10k ohm potentiometer connected to their AIN3 ports which disturbs the sensor readings. Thus, we need to disconnect the potentiometer. Follow [this tutorial](https://learn.sparkfun.com/tutorials/qwiic-12-bit-adc-hookup-guide/hardware-overview) (under Jumpers > Potentiometer) to learn more about how to cut this potentiometer.
 
-#### Adding Females Jumpers to the Linear Resonant Actuators
+### Adding Females Jumpers to the Linear Resonant Actuators
 From the ribbon cable, take out 8 sets of 2-wired cables with length of at least 1 meter. Slightly peel off both ends of the cables to expose the wires. Solder one end of each of the 2-wired cable ends with a linear resonant actuator. Now, cut the female-to-female jumper wires in half, and peel off the ends of the cables to expose the wire. Now, for each of the 8 sets of 2-wired ribbon cables soldered to the linear resonant actuators, solder the other end of the cable with the jumper wires. This will result in 8 linear resonant actuator assemblies, with each actuator having two female jumpers at the end of a 1 meter long cable. If done correctly, the end result should look similar to the linear resonant actuator assembly shown [here](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/PrimaryHardware.png?raw=true).
 
 * **Recommendation:** While taking out 8 sets of 1 meter 2-wired cables, try to take out 4 sets of 2 meter 2-wired cables first, each pair having a different color combination, and then cut these 4 sets in half to make 8 sets of 1 meter 2-wired cables. Doing this will result in each color combination have 2 sets of 1 meter 2-wired cables, which will help immensely with wire management in the later part of the build.
 * **Recommendation:** It is highly recommended to use shrink tubes at the solder joints and heat it with a heat gun. This will not only protect the system from short-circuits and strengthen the overall structure of the system but will also make the system more comfortable to mount at a later stage.
 
-#### Soldering Wires to Flex and Force Sensors
+### Soldering Wires to Flex and Force Sensors
 Similar to the previous step involving the linear resonant actuators, we need to add 1-meter long 2-wired cables to each of the 4 flex and 2 force sensors. However, unlike the previous step, we do not need to solder female jumpers on the other end of the cable.
 * **Recommendation:** Similar to the previous stage, it is highly recommended to use shrink tubes at the solder joints and heat it with a heat gun. This will not only protect the system from short-circuits and strengthen the overall structure of the system but will also make the system more comfortable to mount at a later stage.
 
 ## Step 3: Hardwares, Assemble!
 Once the hardware components are prepared, it is now finally time to assemble them!
 
+### Connecting the Modules to Raspberry Pi 4
+
 ![Raspberry Pi Module Configuration](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/RaspberryPiModuleConnection.png)
+
+We begin our assembly process by connecting the sound card and Qwiic Pi Hat to the Raspberry Pi 4 board.
+1. Stack the Audio Injector Octo 8-Channel sound card on the GPIO header of the Raspberry Pi 4 board. Push in the sound card **gently** on the board so that the GPIO header is perfectly connected to the sound card.
+2. Stack the SparkFun Qwiic Pi Hat on top of the GPIO header pins present on the sound card. Make sure to **align all the pins properly** before pushing it in the board.
+3. Connect the 8-channel output connector on the **Out** socket of the sound card.
+
+If done properly, the setup should resemble the image above.
+
+### Connecting the Sensors to the Qwiic Pi Hat
 
 ![Sensor Wiring](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/SensorWiring.png)
 
-## Step 4: Put 'em in a Box, Tie 'em with a Ribbon
+Once the sound card and the Qwiic Pi Hat are connected to the Raspberry Pi 4 board, we now move on to connecting the sensor system to the Qwiic Pi Hat. Before proceeding, **make sure all the board and sensor wirings are prepared**, as stated in the instructions [above](#step-2-preparing-the-hardware).
+1. Connect the two ADC boards to the Qwiic Pi Hat using Qwiic cables.
+2. Connect the sensors to the ADC boards using the following configuration:
+
+<table>
+<thead>
+  <tr>
+    <th>I2C Address</th>
+    <th>Mounting Body Section</th>
+    <th>Mounting Body Location</th>
+    <th>Pin Number</th>
+    <th>Sensor Type</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="4">0x49</td>
+    <td rowspan="4">Hands</td>
+    <td>Right Palm</td>
+    <td>A0</td>
+    <td>Force</td>
+  </tr>
+  <tr>
+    <td>Left Palm</td>
+    <td>A1</td>
+    <td>Force</td>
+  </tr>
+  <tr>
+    <td>Right Elbow</td>
+    <td>A2</td>
+    <td>Flex</td>
+  </tr>
+  <tr>
+    <td>Left Elbow</td>
+    <td>A3</td>
+    <td>Flex</td>
+  </tr>
+  <tr>
+    <td rowspan="2">0x4A</td>
+    <td rowspan="2">Legs</td>
+    <td>Right Dorsal Knee</td>
+    <td>A0</td>
+    <td>Flex</td>
+  </tr>
+  <tr>
+    <td>Left Dorsal knee</td>
+    <td>A1</td>
+    <td>Flex</td>
+  </tr>
+</tbody>
+</table>
+
+Please refer to the visual guide below to get a clearer idea of sensor connection. Also, **ensure that all the sensors are connected to resistors,** as described in the image above.
+
+### Connecting the Syntacts Board and Vibrotactile Actuators
+Once all the sensors are connected properly, it is time to assemble the haptic feedback system. Before proceeding, **ensure that all the 8 linear resonant actuators are prepared**, as stated in the instructions [above](#step-2-preparing-the-hardware).
+1. Connect all the 8 output ports of with the sound card with the 4 input ports of the Syntacts amplifier board. To do so, use the 2-RCA Male to 3.5 mm Male cable connectors. **Ensure that the cables are connected serially**, with output channel numbers of the sound card matching the input channel numbers of the Syntacts board. <br>
+**Tip:** To ensure correct connection, make sure the output ports of the sound card faces the input ports of the Syntacts board, then connect ports facing each other.
+2. Connect the linear resonant actuators to the Syntacts board. During connection, **ensure that each actuator is connected to one positive and one negative of the same output channel on the Syntacts board**. <br>
+**Tip:** On-Body Gym involves a lot of (lenghtily) wired components. Thus, in order to make the usage process smooth, we **STRONGLY** recommend following a color-based wiring pattern for the actuators, such as:
+
+<table>
+<thead>
+  <tr>
+    <th>Syntacts Output Channel</th>
+    <th>Cable Color Pattern</th>
+    <th>Actuator Location</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0</td>
+    <td rowspan="2">Red</td>
+    <td>Right Dorsal Knee</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Left Dorsal Knee</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td rowspan="2">Yellow</td>
+    <td>Right Wrist/Palm</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Left Wrist/Palm</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td rowspan="2">White</td>
+    <td>Right Elbow Pit</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Left Elbow Pit</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td rowspan="2">Black</td>
+    <td>Right Mastoid/Behind Right Earlobe</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Left Mastoid/Behind Left Earlobe</td>
+  </tr>
+</tbody>
+</table>
+
+**Note:** While maintaining the exact same color combination as defined in the table above is not mandatory, the idea is to maintain a similar pattern/group of wire colors, and that no two wires of different color groups have the same color.
+
+This concludes the primary hardware assembly of On-Body Gym. Now all that's left is loading the software and wrapping the setup in a portable box.
+
+## Step 4: Loading the Software
+We now need to install the Raspbian OS on the Raspberry Pi 4, load all the necessary drivers, softwares, and libraries, and finally load the On-Body Gym software.
+1. Install the Raspbian OS and set up the Raspberry Pi 4 system. The [follow tutorial](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) can serve as a great guide to get things started! <br>
+**Note:** Alternatively, Raspbian OS can also be set up headlessly. But for the initial setup, we strongly recommend setting up the Raspberry Pi with the Raspbian OS which comes with a Desktop (and install with a monitor connected) to make the setup much more convenient.
+2. Connect the Raspberry Pi to WiFi.
+3. Enable [VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md) and [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) on the Raspberry Pi.
+4. Enable [I2C](https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all#i2c-on-pi) on the Raspberry Pi.
+5. Install i2c-tools. To do so, open _terminal_ and enter the following command: <br>`sudo apt-get install -y i2c-tools`
+6. Check the I2C connections on the Raspberry Pi to ensure that the modules have been connected properly. Open _terminal_ and enter the following command: <br>
+`i2cdetect -y 1` <br>
+If the connections are made properly, the command above should yield the following output:
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- UU 49 4a -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- -- 
+```
+If you see `49` and `4a`, this means that the ADC board with the address 0x49 and 0x4A are connected properly to the Raspberry Pi.
+
+7. Install Octo sound card drivers. To do so, follow the **manual setup** provided [here](https://github.com/WHC2021SIC/Octo).
+8. Install the Python library dependencies. To do so, open the _terminal_ and enter the following command: <br>`pip install requests Flask Adafruit-ADS1x15`
+9. Install _PureData_. To do so, open the _terminal_ and enter the following command: <br>`sudo apt-get install puredata`
+10. Test the sound card installation. To do so, open _PureData_, then go to _Media > Audio Settings_. If the Octo sound card setup is done correctly, under the _Output Devices_ dropdown menu, you should be able to see `audioinjector-octo-soundcard (hardware)`. Select it, and then set the _Channels_ to `8`.
+11. Test the actuator connection. To do so, in _PureData_, go to _Media > Test Audio and Midi..._. Then, in the testing window, select the button labeled `80` under the _Test Tones_ section. If the actuators are installed correctly, all the actuators should now start vibrating. Now, test all the actuators individually by disabling all the 8 output channels from the testing window, and then enabling each channel individually and checking the corresponding actuator. <br>
+**Note:** It is **extremely important** to ensure that the audio channels 1 through 8 in PureData directly correspond to the Syntacts board output channels 0 through 7, such that:
+
+<table>
+<tbody>
+  <tr>
+    <td><b>PureData Channel</b></td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td><b>Syntacts Channel</b></td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+</tbody>
+</table>
+
+![PureData Settings](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/puredata_settings.png)
+
+**TROUBLESHOOTING GUIDE:** If the channel mapping does not match the mapping above, **check the connection between the Syntacts board and the Octo sound card**. If the connection is correct, **go to _Media > Audio Settings_ and then reselect `audioinjector-octo-soundcard (hardware)` under the output devices, re-set the channels to `8`, and then click on `Apply`**. This should fix the mapping.
+
+12. Download and extract the _On-Body Gym_ software. To do so, navigate to the [Releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases) page, and download the latest release of _On-Body Gym_ (not to be confused with _On-Body Jukebox_ and _On-Body VR_). Once downloaded, extract the contents of the archive.
+13. Add execution permission to the _On-Body Gym_ software. To do so, navigate to the directory of the extracted archive in a terminal. Once you are in that directory, enter the following command: <br>
+`sudo chmod +x app.sh`
+14. You are now done installing all the necessary softwares, drivers, and libraries on the Raspberry Pi. In order to run the _On-Body Gym_ software, all you need to do is navigate to the extracted archive folder using a terminal, and then enter the following command on the terminal: `./app.sh` <br>
+**Note:** You do not need to run the application right now. It is advisable to run the app after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the application using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
+
+## Step 5: Put 'em in a Box, Tie 'em with a Ribbon
 Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
 
 ![Open Box Configuration Layout](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/BoxConfigurationOpen.png)
@@ -137,7 +331,7 @@ This section contains description about the features of the On-Body Gym virtual 
 This section contains description about the APIs of the On-Body Gym server.
 
 # Authors
-This project has been made possible through a collaboration of some amazing people and organization!
+This project has been made possible through the collaboration of some amazing people and organization!
 
 ## Team
 
