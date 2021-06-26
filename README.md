@@ -305,8 +305,13 @@ If you see `49` and `4a`, this means that the ADC board with the address 0x49 an
 12. Download and extract the _On-Body Gym_ software. To do so, navigate to the [Releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases) page, and download the latest release of _On-Body Gym_ (not to be confused with _On-Body Jukebox_ and _On-Body VR_). Once downloaded, extract the contents of the archive.
 13. Add execution permission to the _On-Body Gym_ software. To do so, navigate to the directory of the extracted archive in a terminal. Once you are in that directory, enter the following command: <br>
 `sudo chmod +x app.sh`
-14. You are now done installing all the necessary softwares, drivers, and libraries on the Raspberry Pi. In order to run the _On-Body Gym_ software, all you need to do is navigate to the extracted archive folder using a terminal, and then enter the following command on the terminal: `./app.sh` <br>
-**Note:** You do not need to run the application right now. It is advisable to run the app after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the application using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
+
+### Running the On-Body Gym Software 
+Congratulations! You are now done installing all the necessary softwares, drivers, and libraries on the Raspberry Pi. 
+
+In order to run the _On-Body Gym_ software, all you need to do is navigate to the extracted archive folder using a terminal, and then enter the following command on the terminal: `./app.sh`
+
+**Note:** It is advisable to run the app after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the application using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
 
 ## Step 5: Put 'em in a Box, Tie 'em with a Ribbon
 Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
