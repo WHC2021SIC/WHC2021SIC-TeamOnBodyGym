@@ -3,7 +3,7 @@
 
 ![Project Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/FeelTheVibeBanner.png)
 
-![Concept Art](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/front_side_integrated.png)
+![Concept Art](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/concept_art.png)
 
 ## Abstract
 
@@ -110,10 +110,16 @@ Similar to the previous step involving the linear resonant actuators, we need to
 ## Step 3: Hardwares, Assemble!
 Once the hardware components are prepared, it is now finally time to assemble them!
 
+![Raspberry Pi Module Configuration](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/RaspberryPiModuleConnection.png)
+
 ![Sensor Wiring](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/SensorWiring.png)
 
 ## Step 4: Put 'em in a Box, Tie 'em with a Ribbon
 Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
+
+![Open Box Configuration Layout](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/BoxConfigurationOpen.png)
+
+![Closed Box Configuration Layout](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/BoxConfigurationClosed.png)
 
 # A User's Guide to Wearing the On-Body Gym
 This section contains step-by-step instructions on how to wear the On-Body Gym system.
