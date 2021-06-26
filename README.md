@@ -51,34 +51,34 @@ The hardware requirements for building the On-Body Gym are categorised as follow
 
 #### For Connecting Things Together
 * [2-RCA Male to 3.5mm Male](https://www.amazon.com/eBoot-3-5mm-Audio-Stereo-Adapter/dp/B06XC5KWJN/) (4 count) <br>
-**Cable Length Recommendation:** Short, approximately 6 inches in length.
+    - **Cable Length Recommendation:** Short, approximately 6 inches in length.
 * [Qwiic Cable](https://www.sparkfun.com/products/14426) (2 count) <br>
-**Cable Length Recommendation:** Extremely short, approximately 50 mm in length.
+    - **Cable Length Recommendation:** Extremely short, approximately 50 mm in length.
 * [Ribbon Cables](https://www.sparkfun.com/products/10647) <br>
-**Cable Recommentation:** A multi-colored wire strand setup will help in cable management. <br>
-**Cable Length Recommendation:** Extremely long, at least 30 feet long for a 10-wire pack.
+    - **Cable Recommentation:** A multi-colored wire strand setup will help in cable management. <br>
+    - **Cable Length Recommendation:** Extremely long, at least 30 feet long for a 10-wire pack.
 * [Female Jumper Wires](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) (16 count) <br>
-**Cable Length Recommendation:** As short as can be, only the connector is required with minimal wire (will be soldered to ribbon cables).
+    - **Cable Length Recommendation:** As short as can be, only the connector is required with minimal wire (will be soldered to ribbon cables).
 * **[OPTIONAL]** [Type-C Cable](https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B08NX7M6MS) <br>
-**Cable Recommentation:** This cable is required only if using a power bank or USB outlet to power Raspberry Pi. <br>
-**Cable Length Recommendation:** Depends, approximately 2 feet if using a powerbank, otherwise as long as possible if powering through USB-outlet.
+    - **Cable Recommentation:** This cable is required only if using a power bank or USB outlet to power Raspberry Pi. <br>
+    - **Cable Length Recommendation:** Depends, approximately 2 feet if using a powerbank, otherwise as long as possible if powering through USB-outlet.
 * **[OPTIONAL]** [Micro-HDMI to HDMI Cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/) <br>
-**Cable Recommentation:** This cable is required only if connection to monitor is required. <br>
-**Cable Length Recommendation:** As per monitor placement.
+    - **Cable Recommentation:** This cable is required only if connection to monitor is required. <br>
+    - **Cable Length Recommendation:** As per monitor placement.
 * **[OPTIONAL]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) <br>
-**Recommentation:** This is only required to power the Syntacts board. Alternatively, a USB cable with exposed VCC and GND wires can also be used along with a power bank or USB-outlet. <br>
+    - **Recommentation:** This is only required to power the Syntacts board. Alternatively, a USB cable with exposed VCC and GND wires can also be used along with a power bank or USB-outlet. <br>
 
 #### Other Electronic Components
 * [1k Ohm Resistor](https://www.sparkfun.com/products/14492) (6 count)
 * **[OPTIONAL]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) <br>
-**Recommendation:** This is HIGHLY RECOMMENDED in order to allow for an untethered experience.
+    - **Recommendation:** This is HIGHLY RECOMMENDED in order to allow for an untethered experience.
 
 #### Non-Electronic Components for Assembling the System
 * [Knee-Length Socks](https://www.amazon.com/gp/product/B07H2WGKVB) (at least 4 pairs)
 * [Velcro Cable Ties](https://www.amazon.com/gp/product/B001E1Y5O6) (approximately 30 pieces) <br>
-**Recommendation:** Cable Ties and Socks are used to hold components in place. These are highly recommended, but alternatively any string with significant tensile strength can be used to tie the components on the user's body, not recommended though.
+    - **Recommendation:** Cable Ties and Socks are used to hold components in place. These are highly recommended, but alternatively any string with significant tensile strength can be used to tie the components on the user's body, not recommended though.
 * [Band-Aid](https://www.amazon.com/gp/product/B00ZQF0Y5K) (each setup needs approximately 10 band-aids per use, purchase accordingly) <br>
-**Recommendation:** Band-Aids are used for holding components against the skin since they are considered as skin-safe adhesives, but alternatively regular tapes could also be used, not recommended though.
+    - **Recommendation:** Band-Aids are used for holding components against the skin since they are considered as skin-safe adhesives, but alternatively regular tapes could also be used, not recommended though.
 * Cardboard Box (17mm L x 11mm B x 9mm D)
 
 #### Tools
