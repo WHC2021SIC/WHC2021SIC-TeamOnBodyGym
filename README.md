@@ -1,22 +1,29 @@
 # On-Body Gym
 **Feel the Vibe: A Wearable On-Body Gym Simulator**
 
-
 ![On-Body Gym Concept](https://user-images.githubusercontent.com/34148735/121788886-34bd6c80-cb9f-11eb-9b51-71b0570a05cd.png)
-
 
 ## Abstract
 
 Impacted by the COVID-19 pandemic, gyms across the globe have either shut down or restricted total capacity. Due to this, everyone has turned to exercising at home regularly. To benefit people with their mental and physical health, we propose a wearable on-body haptic device capable of providing a holistic workout experience at home. Using granular haptic feedback, our proposed system can simulate the feeling of using actual gym equipment. We leverage flex sensors, force sensors, and vibrotactile actuators, all working in tandem to detect workout activity and trigger a granular haptic response to mirror the feedback we receive from various spring-and-pulley based gym machines. The generated granular haptic feedback also motivates free-hand workout routines. Additionally, our system simulates the rhythm of the music using vibrotactile actuators to promote endurance and a positive mood during workouts, allowing users to select from a range of predefined soundtracks, or load their own music. This will be especially useful for people with hearing impairment, who can now enjoy the rhythm of any music while working out. Overall, we have designed this system to encourage all types of people to pursue fitness and to enrich their home workout experience.
 
+## Introduction
+Introduction goes here.
+
 ## Contents
 
 - [Abstract](#abstract)
 - [Introduction](#introduction)
-  * [Documentation](#documentation)
-    + [Hardware](#hardware)
-      - [Sensors wiring](#sensors-wiring)
-    + [Software](#software)
+- [Getting Started](#getting-started)
+    + [Step 1: Acquiring the Hardware](#step-1-acquiring-the-hardware)
+    + [Step 2: Preparing the Hardware](#step-2-preparing-the-hardware)
+    + [Step 3: Hardwares, Assemble!](#step-3-hardwares-assemble)
+    + [Step 4: Put 'em in a Box, Tie 'em with a Ribbon](#step-4-put-em-in-a-box-tie-em-with-a-ribbon)
+- [A User's Guide to Wearing the On-Body Gym](#a-users-guide-to-wearing-the-on-body-gym)
+- [Interacting with the On-Body Gym](#interacting-with-the-on-body-gym)
+- [On-Body Jukebox](#on-body-jukebox)
+- [On-Body VR](#on-body-vr)
+- [A Developer's Guide to the On-Body Gym APIs](#a-developers-guide-to-the-on-body-gym-apis)
 - [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -99,31 +106,26 @@ Similar to the previous step involving the linear resonant actuators, we need to
 ## Step 3: Hardwares, Assemble!
 Once the hardware components are prepared, it is now finally time to assemble them!
 
+## Step 4: Put 'em in a Box, Tie 'em with a Ribbon
+Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
 
-## Extra
-##### Sensors wiring
+# A User's Guide to Wearing the On-Body Gym
+This section contains step-by-step instructions on how to wear the On-Body Gym system.
 
-<!-- Feel free to remove or adapt the following explanation once you have understood its potential implications for your project. -->
+# Interacting with the On-Body Gym
+This section contains description of some of the interactions supported by the On-Body Gym system.
 
-We use the SparkFun Qwiic system to rapidly and remotely prototype sensors without much soldering. Qwiic uses the I2C communication protocol with addresses assigned per board model.
-Our Qwiic-based architectures may require:
-- 1 Qwiic MUX I2C multiplexer board per group identical sensor/board model (example: needed by 2 flex finger boards in the figures below)
-- 1 Qwiic ADC board per group of 4 sensors that are not implemented as Qwiic boards (example: needed by 4 FSRs sensors in the figures below)
+# On-Body Jukebox
+This section contains description about the features of the On-Body Jukebox Android application.
 
-<!-- Adapt this sensor architecture, covering all possible sensors accross all teams, to your team. -->
+# On-Body VR
+This section contains description about the features of the On-Body Gym virtual reality application.
 
-![Sensor Configuration](images/architecture/sensor-configuration.svg)
-
-Made with [drawio-desktop](https://github.com/jgraph/drawio-desktop/) (online version: [diagrams.net](https://www.diagrams.net/)).
-
-<!-- see: https://www.diagrams.net/blog/embed-diagrams-github-markdown -->
-
-#### Software
-
-<!-- Describe your software components -->
-
+# A Developer's Guide to the On-Body Gym APIs
+This section contains description about the APIs of the On-Body Gym server.
 
 # Authors
+This project has been made possible through a collaboration of some amazing people and organization!
 
 ## Team
 
