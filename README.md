@@ -64,19 +64,19 @@ The hardware requirements for building the On-Body Gym are categorised as follow
     - **Cable Length Recommendation:** Extremely long, at least 30 feet long for a 10-wire pack.
 * [Female Jumper Wires](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) (16 count) <br>
     - **Cable Length Recommendation:** As short as can be, only the connector is required with minimal wire (will be soldered to ribbon cables).
-* **[OPTIONAL]** [Type-C Cable](https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B08NX7M6MS) <br>
+* **[Optional]** [Type-C Cable](https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B08NX7M6MS) <br>
     - **Cable Recommentation:** This cable is required only if using a power bank or USB outlet to power Raspberry Pi. <br>
     - **Cable Length Recommendation:** Depends, approximately 2 feet if using a powerbank, otherwise as long as possible if powering through USB-outlet.
-* **[OPTIONAL]** [Micro-HDMI to HDMI Cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/) <br>
+* **[Optional]** [Micro-HDMI to HDMI Cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/) <br>
     - **Cable Recommentation:** This cable is required only if connection to monitor is required. <br>
     - **Cable Length Recommendation:** As per monitor placement.
-* **[OPTIONAL]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) <br>
+* **[Optional]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) <br>
     - **Recommentation:** This is only required to power the Syntacts board. Alternatively, a USB cable with exposed VCC and GND wires can also be used along with a power bank or USB-outlet. <br>
 
 ### Other Electronic Components
 * [16GB MicroSDHC Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNS-016G-GN3MN-UHS-I-microSDHC/dp/B074B4P7KD)
 * [1k Ohm Resistor](https://www.sparkfun.com/products/14492) (6 count)
-* **[OPTIONAL]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) <br>
+* **[Optional]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) <br>
     - **Recommendation:** This is HIGHLY RECOMMENDED in order to allow for an untethered experience.
 
 ### Non-Electronic Components for Assembling the System
@@ -129,7 +129,8 @@ If done properly, the setup should resemble the image above.
 
 Once the sound card and the Qwiic Pi Hat are connected to the Raspberry Pi 4 board, we now move on to connecting the sensor system to the Qwiic Pi Hat. Before proceeding, **make sure all the board and sensor wirings are prepared**, as stated in the instructions [above](#step-2-preparing-the-hardware).
 1. Connect the two ADC boards to the Qwiic Pi Hat using Qwiic cables.
-2. Connect the sensors to the ADC boards using the following configuration:
+2. Mark the two flex sensors which are to be connected to the ADC board with I2C address 0x4A with some sort of identification mark (e.g., colored marker) for later identification.
+3. Connect the sensors to the ADC boards using the following configuration:
 
 <table>
 <thead>
@@ -300,7 +301,7 @@ If you see `49` and `4a`, this means that the ADC board with the address 0x49 an
 
 ![PureData Settings](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/puredata_settings.png)
 
-**TROUBLESHOOTING GUIDE:** If the channel mapping does not match the mapping above, **check the connection between the Syntacts board and the Octo sound card**. If the connection is correct, **go to _Media > Audio Settings_ and then reselect `audioinjector-octo-soundcard (hardware)` under the output devices, re-set the channels to `8`, and then click on `Apply`**. This should fix the mapping.
+**Troubleshooting Guide:** If the channel mapping does not match the mapping above, **check the connection between the Syntacts board and the Octo sound card**. If the connection is correct, **go to _Media > Audio Settings_ and then reselect `audioinjector-octo-soundcard (hardware)` under the output devices, re-set the channels to `8`, and then click on `Apply`**. This should fix the mapping.
 
 12. Download and extract the _On-Body Gym_ software. To do so, navigate to the [Releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases) page, and download the latest release of _On-Body Gym_ (not to be confused with _On-Body Jukebox_ and _On-Body VR_). Once downloaded, extract the contents of the archive.
 13. Add execution permission to the _On-Body Gym_ software. To do so, navigate to the directory of the extracted archive in a terminal. Once you are in that directory, enter the following command: <br>
@@ -314,11 +315,34 @@ In order to run the _On-Body Gym_ software, all you need to do is navigate to th
 **Note:** It is advisable to run the app after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the application using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
 
 ## Step 5: Put 'em in a Box, Tie 'em with a Ribbon
-Now that the hardware is assembled together, we can finally compactify the setup by putting it in a cardboard box.
 
 ![Open Box Configuration Layout](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/BoxConfigurationOpen.png)
 
 ![Closed Box Configuration Layout](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/BoxConfigurationClosed.png)
+
+Now that the hardware is assembled together and the softwares are loaded, we can finally compactify the setup by putting it in a cardboard box. Before proceeding, **ensure that all the components are connected to each other** (except for the power connection on the Raspberry Pi and Syntacts board).
+
+1. For packing the system, we need a cardboard box (with a lid) that is 17mm long, 11mm wide, and 9mm deep.
+2. Cut two thin, vertical slits of dimension `6mm x 0.5mm`, one on each side, on end of the sides which have the dimensions `11mm x 9mm`. Refer to the image above to get a clearer idea of the dimension and location of the slits.
+3. Insert two knee-length socks, one in each slit, and then tie the ends of both the socks together inside the box to form one very long, dyfunctional sock (refer image above). <br>
+**Note:** Leave the outer end of the sock as is. We will use this to tie the device to our body over our waist.
+4. Write `R` with a marker on the right side of the box which contains the slit. Similarly, write `L` on the left side of the box which contains the other slit.
+5. **[Ultra Important Step]** Referring to the [actuator](#connecting-the-syntacts-board-and-vibrotactile-actuators) and [sensor](#connecting-the-syntacts-board-and-vibrotactile-actuators) tables above, separate all the sensors and actuators that go on the right side of the body from those that go on the left side of the body. Once the sensors and actuators are categorised into two parts, left and right, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `R`. Similarly, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `L`.
+6. **[Optional]** Wrap the cables on each end with a cable tie to keep things clean and tidy.
+7. Plug in a Type-C USB on the Raspberry Pi, and a USB-based power cable on the Syntacts board, and then take the other ends of those wires out from either of the slit (from inside to outside of the box).
+8. Once the sensors/actuators of the left and right side are segregated, it is now time to put the hardware in the box.
+    1. First place the Syntacts board on the base of the cardboard box.
+    2. Then place the ADC boards. <br>
+    **Tip:** You can try securing the ADC boards behind the sock joint inside the box.
+    3. Then place the Raspberry Pi board along with the connected sound card and Qwiic Pi Hat modules.
+    4. Finally, insert the 8-channel output connector.
+8. Close the box!
+9. **[Optional, but Highly Recommended]** If you're using a power bank to power the system, place the power bank on top of the closed box and then tie it to the box using a sock cutout or a cable tie (or literally anything that can hold the two things together). <br>
+**Note:** Do not plug in the USB cables to the power bank unless you want to start using the system since plugging the USB cable will power on the device.
+
+If everything is done correctly, your build should have resemblance to the images above.
+
+**Congratulations! You have successfully built your own On-Body Gym system!**
 
 # A User's Guide to Wearing the On-Body Gym
 This section contains step-by-step instructions on how to wear the On-Body Gym system.
@@ -336,7 +360,7 @@ This section contains description about the features of the On-Body Gym virtual 
 This section contains description about the APIs of the On-Body Gym server.
 
 # Authors
-This project has been made possible through the collaboration of some amazing people and organization!
+This project has been made possible through a collaboration of some amazing people and organization!
 
 ## Team
 
