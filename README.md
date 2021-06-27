@@ -307,12 +307,12 @@ If you see `49` and `4a`, this means that the ADC board with the address 0x49 an
 13. Add execution permission to the _On-Body Gym_ software. To do so, navigate to the directory of the extracted archive in a terminal. Once you are in that directory, enter the following command: <br>
 `sudo chmod +x app.sh`
 
-### Running the On-Body Gym Software 
+### Running the On-Body Gym Server 
 Congratulations! You are now done installing all the necessary softwares, drivers, and libraries on the Raspberry Pi. 
 
-In order to run the _On-Body Gym_ software, all you need to do is navigate to the extracted archive folder using a terminal, and then enter the following command on the terminal: `./app.sh`
+In order to run the _On-Body Gym_ server, all you need to do is navigate to the extracted archive folder using a terminal, and then enter the following command on the terminal: `./app.sh`
 
-**Note:** It is advisable to run the app after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the application using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
+**Note:** It is advisable to run the server after wearing the system on the body. Also, from this point onwards, you can safely access the Raspberry Pi over SSH and run the server using the instruction above, thus you won't have to connect the Raspberry Pi to any monitor as it can be operated headlessly.
 
 ## Step 5: Put 'em in a Box, Tie 'em with a Ribbon
 
@@ -345,7 +345,91 @@ If everything is done correctly, your build should have resemblance to the image
 **Congratulations! You have successfully built your own On-Body Gym system!**
 
 # A User's Guide to Wearing the On-Body Gym
-This section contains step-by-step instructions on how to wear the On-Body Gym system.
+
+![Wearer's Guide](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/WearersGuide.png)
+
+In order to mount the On-Body Gym, we use sock cut-outs, cable ties, and band-aids (or skin-friendly adhesive tapes). Before proceeding to wear our system, sock cut-outs need to be prepared.
+
+### Preparing Sock Cut-Outs
+
+![Sock Cut-Out Guide](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/SockCutoutGuide.png)
+
+<table>
+<thead>
+  <tr>
+    <th>Sock Set #</th>
+    <th>Length</th>
+    <th>Location</th>
+    <th>Held Components</th>
+    <th>Notes</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>26 mm</td>
+    <td>Knees</td>
+    <td>Flex, LRA</td>
+    <td>Use at least 2 cable ties on each sock to hold the flex sensor. Sensors can also be taped to the sock with a band-aid.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>12 mm</td>
+    <td>Palms</td>
+    <td>Force, LRA</td>
+    <td>Ensure that this cut has the top elastic for better grip. Also, you need to cut holes for the thumb.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>10 mm</td>
+    <td>Biceps</td>
+    <td>-</td>
+    <td>Used for cable management.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>8 mm</td>
+    <td>Forearm</td>
+    <td>-</td>
+    <td>Used for cable management.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>18 mm</td>
+    <td>Elbows</td>
+    <td>Flex, LRA</td>
+    <td>Use at least 2 cable ties on each sock to hold the flex sensor. Sensors can also be taped to the sock with a band-aid.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>14 mm</td>
+    <td>Thighs</td>
+    <td>-</td>
+    <td>Used for cable management.</td>
+  </tr>
+</tbody>
+</table>
+
+Based on the diagram and table information above, cut out the relevant sections from knee-length socks.
+
+### Mounting the System
+
+![Detailed Wearer's Guide](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/WearersGuideDetailed.png)
+
+Once the sock cut-outs are prepared, it is now finally time to mount the system as per the images above. While you can wear this device as per your convenience as long as the sensors are perfectly in place, we have compiled a list of tips which we have learned during our many trials of wearing the system.
+
++ **Tip #1:** Taking assistance from a friend for wearing the system will be super helpful and is highly recommended.
++ **Tip #2:** Before putting on any sensor, it is advisable to wear all the socks in the relevant places.
++ **Tip #3:** Once the socks are worn, the next advisable step would be to wrap the device box around the waist before placing any sensors.
++ **Tip #4:** Once the device box is tied to the waist, it is advisable to place the sensors one side of the body at a time. This will help reduce wire clutter.
++ **Tip #5:** Use band-aids to place the LRA behind the earlobes.
++ **Tip #6:** Sensors can be held together to the socks using band-aids.
++ **Tip #7:** Tie up all the excess wires together with the box on the back only after all the sensors are placed.
++ **Tip #8:** Ensure that you are able to stretch both your arms and legs before tying up all the excess wires. It is advisable to give some leeway while tying up the extras.
+
+Once you've mounted the system, you can now power on the device (by connecting the USB cables with the power bank) and then experience our On-Body Gym system by [running the server](#running-the-on-body-gym-server).
+
+**Happy Exercising!**
 
 # Interacting with the On-Body Gym
 This section contains description of some of the interactions supported by the On-Body Gym system.
