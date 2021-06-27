@@ -29,6 +29,7 @@ Introduction goes here.
 - [A Developer's Guide to the On-Body Gym APIs](#a-developers-guide-to-the-on-body-gym-apis)
 - [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
+- [References](#references)
 - [License](#license)
 
 
@@ -522,12 +523,15 @@ Find more information on her [website](https://sites.usc.edu/culbertson/).
 
 
 # Acknowledgements
-
 SIC chairs would like to thank Evan Pezent, Zane A. Zook and Marcia O'Malley from [MAHI Lab](http://mahilab.rice.edu) at Rice University for having distributed to them 2 [Syntacts](https://www.syntacts.org) kits for the [IROS 2020 Intro to Haptics for XR Tutorial](http://iros-haptics-tutorial.org/). 
 SIC co-chair Christian Frisson would like to thank Edu Meneses and Johnty Wang from [IDMIL](http://idmil.org) at McGill University for their recommendations on Raspberry Pi hats for audio and sensors.
 
 Team On-Body Gym would like to thank [Kuntal Podder](https://kuntal013.artstation.com) for making the hand-grip 3D model for the virtual reality application. We would also like to thank the WHC 2021 SIC chairs for providing us with the opportunity (and of course the amazing hardware kit)!
 
+
+# References
+1. Seongkook Heo, Jaeyeon Lee, and Daniel Wigdor. 2019. PseudoBend: Producing Haptic Illusions of Stretching, Bending, and Twisting Using Grain Vibrations. In <i>Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology</i> (<i>UIST '19</i>). Association for Computing Machinery, New York, NY, USA, 803–813. DOI:https://doi.org/10.1145/3332165.3347941
+2. Paul Strohmeier, Seref Güngör, Luis Herres, Dennis Gudea, Bruno Fruchard, and Jürgen Steimle. 2020. BARefoot: Generating Virtual Materials using Motion Coupled Vibration in Shoes. Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology. Association for Computing Machinery, New York, NY, USA, 579–593. DOI:https://doi.org/10.1145/3379337.3415828
 
 # License
 
