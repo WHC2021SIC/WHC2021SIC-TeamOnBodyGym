@@ -434,7 +434,7 @@ Once you've mounted the system, you can now power on the device (by connecting t
 
 # On-Body Jukebox
 
-![On-Body Jukebox Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/OnBodyJukeboxBanner.jpg)
+![On-Body Jukebox Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyJukeboxBanner.png)
 
 ## Features
 On-Body Jukebox is an Android companion application for our On-Body Gym system. While On-Body Gym is, in itself, a standalone system, this companion app adds a neat layer of convenience to using our system.
