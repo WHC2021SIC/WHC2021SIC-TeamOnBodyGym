@@ -100,7 +100,7 @@ The SparkFun 12-bit 4-channel ADC board has a default I2C address of 0x48. Howev
 ### Disconnecting the 10kΩ Potentiometer of the ADC Boards
 The ADC boards have a 10k ohm potentiometer connected to their AIN3 ports which disturbs the sensor readings. Thus, we need to disconnect the potentiometer. Follow [this tutorial](https://learn.sparkfun.com/tutorials/qwiic-12-bit-adc-hookup-guide/hardware-overview) (under Jumpers > Potentiometer) to learn more about how to cut this potentiometer.
 
-### Adding Females Jumpers to the Linear Resonant Actuators
+### Adding Female Jumpers to the Linear Resonant Actuators
 From the ribbon cable, take out 8 sets of 2-wired cables with length of at least 1 meter. Slightly peel off both ends of the cables to expose the wires. Solder one end of each of the 2-wired cable ends with a linear resonant actuator. Now, cut the female-to-female jumper wires in half, and peel off the ends of the cables to expose the wire. Now, for each of the 8 sets of 2-wired ribbon cables soldered to the linear resonant actuators, solder the other end of the cable with the jumper wires. This will result in 8 linear resonant actuator assemblies, with each actuator having two female jumpers at the end of a 1 meter long cable. If done correctly, the end result should look similar to the linear resonant actuator assembly shown [here](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/PrimaryHardware.png?raw=true).
 
 * **Recommendation:** While taking out 8 sets of 1 meter 2-wired cables, try to take out 4 sets of 2 meter 2-wired cables first, each pair having a different color combination, and then cut these 4 sets in half to make 8 sets of 1 meter 2-wired cables. Doing this will result in each color combination have 2 sets of 1 meter 2-wired cables, which will help immensely with wire management in the later part of the build.
@@ -432,11 +432,12 @@ Once you've mounted the system, you can now power on the device (by connecting t
 
 **Happy Exercising!**
 
-# Interacting with the On-Body Gym
-This section contains description of some of the interactions supported by the On-Body Gym system.
-
 # On-Body Jukebox
-This section contains description about the features of the On-Body Jukebox Android application.
+
+![On-Body Jukebox Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/OnBodyJukeboxBanner.jpg)
+
+## Features
+On-Body Jukebox is an Android companion application for our On-Body Gym system. While On-Body Gym is, in itself, a standalone system, this companion app adds a neat layer of convenience to using our system.
 
 # On-Body VR
 This section contains description about the features of the On-Body Gym virtual reality application.
