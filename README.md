@@ -437,10 +437,42 @@ Once you've mounted the system, you can now power on the device (by connecting t
 ![On-Body Jukebox Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyJukeboxBanner.png)
 
 ## Features
-On-Body Jukebox is an Android companion application for our On-Body Gym system. While On-Body Gym is, in itself, a standalone system, this companion app adds a neat layer of convenience to using our system.
+On-Body Jukebox is an Android companion application for our On-Body Gym system which allows users to play the rhythm of any music through haptic feedback (and also listen to the audio via bone conduction) on the On-Body Gym system to give them an additional push in reaching their workout goals. On-Body Jukebox comes with 5 pre-loaded beat-pumping tracks (see tracklisting [here](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/OnBodyGym/jukebox/tracklisting.md)), and allows the user to add one of their own custom audio. This sytem can effectively allow even people with hearing impairments to feel the rhythmic vibration of any music even if they aren't able to enjoy the music itself! The features of On-Body Jukebox can be listed as follows:
+* **Jukebox**
+    + Play rhythmic vibration of any music on the actuators placed behind the earlobes of the On-Body Gym system.
+    + Contains 5 pre-loaded, personally curated tracklisting.
+    + Allows users to load any custom music.
+* **Settings**
+    + Allows easy connection to the Raspberry Pi running the On-Body Gym server by simply entering its IP address.
+    + Allows users to adjust the music rhythm vibration intensity.
+    + Allows users to adjust the workout grain vibration intensity.
+    + Allows access to developer console.
+* **Developer Console**
+    + Allows testing individual LRA connections and also reveals the position where each LRA should be placed.
+    + Provides real-time force and flex sensor data to test whether the device is running properly.
+    + Allows users to hard-reset the Audio DSP on the Raspberry Pi for troubleshooting.
+
+**Note:** On-Body Gym is, in itself, a standalone system, and does not mandatorily require this application to function. However, this companion app adds a neat layer of convenience to using our system, allowing users to perform all the said additional features wirelessly through a mobile phone, without having to manually connect the Raspberry Pi to a monitor and fidget with terminals and codes.
+
+## Usage
+In this section, we have listed instructions to get started with the basic functionalities of the application.
+
+### Installation
+Download the latest `.apk` binary file from [releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases/) and open it on your Android device to install On-Body Jukebox. <br>
+**Note:** The Android device must have appropriate permission to install applications from unknown sources in order to successfully install the application.
+
+### Connecting On-Body Jukebox to On-Body Gym
+Before proceeding, ensure that the Raspberry Pi is connected to a network and that the On-Body Gym server is [running](#running-the-on-body-gym-server) on it. Note down the IP address of the Raspberry Pi device. Now, after installing the android application, open it and click on `Settings`. Inside settings, on the top, there should be a text box to enter the IP address of the system. Enter the IP address in that field and then click on `Set Connection`. If everything is done correctly, the bottom bar on the application should turn green and show the message `Connected`.
+
+### Uploading Custom Music
+Follow the instructions on the image below to load custom music.
+
+![Uploading Custom Music](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/MusicUploader.png)
+
+**Note:** The system only supports `*.wav` audio files currently, `*.mp3` is not supported.
 
 # On-Body VR
-This section contains description about the features of the On-Body Gym virtual reality application.
+![On-Body VR Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyVR.png)
 
 # A Developer's Guide to the On-Body Gym APIs
 This section contains description about the APIs of the On-Body Gym server.
