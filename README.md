@@ -112,6 +112,9 @@ Find more information on her [website](https://sites.usc.edu/culbertson/).
     + [Preparing Sock Cut-Outs](#preparing-sock-cut-outs)
     + [Mounting the System](#mounting-the-system)
 - [A Developer's Guide to the On-Body Gym API](#a-developers-guide-to-the-on-body-gym-api) :electric_plug:
+    + [API Endpoints](#api-endpoints)
+    + [Developer Mode Launcher](#developer-mode-launcher)
+    + [Demonstration](#demonstration)
 - [On-Body Jukebox](#on-body-jukebox) :notes:
     + [Features](#features)
     + [Usage](#usage)
