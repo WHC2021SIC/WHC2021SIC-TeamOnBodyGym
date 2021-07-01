@@ -1,5 +1,5 @@
 # On-Body Gym
-**Feel the Vibe: A Wearable On-Body Gym Simulator**
+**This project was accepted in the [IEEE World Haptics Conference 2021 Student Innovation Challenge](https://2021.worldhaptics.org/sic-program/).**
 
 ![Project Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/FeelTheVibeBanner.png)
 
@@ -82,7 +82,7 @@ Heather Culbertson is a Gabilan Assistant Professor of Computer Science at the U
 
 Find more information on her [website](https://sites.usc.edu/culbertson/).
 
-## Contents
+# Contents
 
 - [Abstract](#abstract)
 - [Frequently Asked Questions](#frequently-asked-questions)
@@ -123,11 +123,11 @@ Find more information on her [website](https://sites.usc.edu/culbertson/).
 - [References](#references)
 - [License](#license)
 
-## Abstract
+# Abstract
 
 Impacted by the COVID-19 pandemic, gyms across the globe have either shut down or restricted total capacity. Due to this, everyone has turned to exercising at home regularly. To benefit people with their mental and physical health, we propose a wearable on-body haptic device capable of providing a holistic workout experience at home. Using granular haptic feedback, our proposed system can simulate the feeling of using actual gym equipment. We leverage flex sensors, force sensors, and vibrotactile actuators, all working in tandem to detect workout activity and trigger a granular haptic response to mirror the feedback we receive from various spring-and-pulley based gym machines. The generated granular haptic feedback also motivates free-hand workout routines. Additionally, our system simulates the rhythm of the music using vibrotactile actuators to promote endurance and a positive mood during workouts, allowing users to select from a range of predefined soundtracks, or load their own music. This will be especially useful for people with hearing impairment, who can now enjoy the rhythm of any music while working out. Overall, we have designed this system to encourage all types of people to pursue fitness and to enrich their home workout experience.
 
-## Frequently Asked Questions
+# Frequently Asked Questions
 
 ### Q: What is On-Body Gym?
 On-Body Gym is a wearable haptic device that is capable of detecting the user's workout activity and provide granular haptic feedback to simulate the feeling of using spring-and-pulley based gym equipments through compliance illusion.
