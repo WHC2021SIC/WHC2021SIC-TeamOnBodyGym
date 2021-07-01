@@ -122,8 +122,8 @@ Find more information on her [website](https://sites.usc.edu/culbertson/).
         - [Connecting On-Body Jukebox to On-Body Gym](#connecting-on-body-jukebox-to-on-body-gym)
         - [Uploading Custom Music](#uploading-custom-music)
 - [On-Body VR](#on-body-vr) :video_game:
-    + [Usage](#usage)
-        - [Installation](#installation)
+    + [Usage](#usage-1)
+        - [Installation](#installation-1)
         - [Connecting On-Body VR to On-Body Gym](#connecting-on-body-vr-to-on-body-gym)
         - [Running On-Body VR](#running-on-body-vr)
 - [Acknowledgements](#acknowledgements)
