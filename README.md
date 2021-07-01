@@ -3,35 +3,131 @@
 
 ![Project Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/FeelTheVibeBanner.png)
 
-![Concept Art](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/concept_art.png)
+# Authors
+This project has been made possible through a collaboration of some amazing people and organization!
+
+## Team
+
+#### Md Aashikur Rahman Azim
+
+<img alt="Aashik's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Aashik.jpg?raw=true" width="100px" height="auto"/>
+
+Md Aashikur Rahman Azim is a third-year computer science Ph.D. student at the University of Virginia (UVa). Aashik is currently working with Professor Seongkook Heo on wearable user interfaces in the context of Human-Computer Interaction (HCI). He received both Bachelor of Science and Master of Science degrees from the Department of Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET) in February 2013 and December 2016, respectively. His research area includes Human-Computer Interaction, Applied Machine Learning, and Embedded Systems.
+
+Find more information on his [website](https://sites.google.com/view/aashikazim/).
+
+#### Archana Narayanan
+
+<img alt="Archana's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Archana.jpg?raw=true" width="100px" height="auto"/>
+
+Archana Narayanan is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
+
+Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
+
+#### Adil Rahman
+
+<img alt="Adil's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Adil.jpg?raw=true" width="100px" height="auto"/>
+
+Adil Rahman is a first-year PhD student at the University of Virginia (UVa). Adil's research interest lies in the field of Human-Computer Interaction, particularly in making devices more accessible to everyone and creating new interaction techniques. Prior to joining the PhD program at UVa, Adil has had a year's worth of experience working with gesture recognition at the Indian Statistical Institute. Adil also holds a BTech (IT) from Heritage Institute of Technology, Kolkata, from where he graduated as a gold-medalist in 2020. In his spare time, Adil loves to play video games, make music, and then play some more video games!
+
+Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
+
+#### Wen Ying
+
+<img alt="Wen's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Wen.jpeg?raw=true" width="100px" height="auto"/>
+
+Wen Ying is a first-year CS PhD student at the University of Virginia. Her study involves experimenting with different types of haptic feedback from which she has had experience with creating virtual haptic feedback using LRA actuators, sensors, boards, etc.
+
+Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglLobY8OH5/view?usp=sharing) for more information.
+
+## Advisor
+
+#### Seongkook Heo
+
+<img alt="Seongkook's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Seongkook.jpg?raw=true" width="100px" height="auto"/>
+
+Seongkook Heo is an Assistant Professor in the Department of Computer Science at the University of Virginia. His research interests span across various areas of human-computer interaction, with an emphasis on interaction techniques and technologies. He was previously a postdoctoral researcher in the DGP Lab at the University of Toronto, where he worked with Prof. Daniel Wigdor. He received his PhD in Computer Science at the KAIST in 2017, advised by Prof. Geehyuk Lee. He was also a research intern at industry research labs, including Samsung Advanced Institute of Technology, Microsoft Research (with Dr. Ken Hinckley), and Autodesk Research (with Dr. Tovi Grossman).
+
+Find more information on his [website](https://seongkookheo.com).
+
+## Chairs
+
+#### Christian Frisson
+
+<img alt="Christian Frissons's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/ChristianFrisson.jpg?raw=true" width="100px" height="auto"/>
+
+Christian Frisson is an associate researcher at the Input Devices and Music Interaction Laboratory (IDMIL) (2021), previously postdoctoral researcher at McGill University with the IDMIL (2019-2020), at the University of Calgary with the Interactions Lab (2017-2018) and at Inria in France with the Mjolnir team (2016-2017). He obtained his PhD at the University of Mons, numediart Institute, in Belgium (2015); his MSc in “Art, Science, Technology” from Institut National Polytechnique de Grenoble with the Association for the Creation and Research on Expression Tools (ACROE), in France (2006); his Masters in Electrical (Metrology) and Mechanical (Acoustics) Engineering from ENSIM in Le Mans, France (2005). 
+Christian Frisson is a researcher in Human-Computer Interaction, with expertise in Information Visualization, Multimedia Information Retrieval, and Tangible/Haptic Interaction. Christian creates and evaluates user interfaces for manipulating multimedia data. Christian favors obtaining replicable, reusable and sustainable results through open-source software, open hardware and open datasets. 
+With his co-authors, Christian obtained the IEEE VIS 2019 Infovis Best Paper award and was selected among 4 finalists for IEEE Haptics Symposium 2020 Most Promising WIP.
+
+Find more information on his [website](https://frisson.re).
+
+#### Jun Nishida
+
+<img alt="Jun Nishida's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/JunNishida.jpg?raw=true" width="100px" height="auto"/>
+
+Jun Nishida is **Currently** Postdoctoral Fellow at University of Chicago & Research Fellow at Japan Society for the Promotion of Science (JSPS PDRA) / **Previously** JSPS Research Fellow (DC1), Project Researcher at Japanese Ministry of Internal Affairs and Communications, SCOPE Innovation Program & PhD Fellow at Microsoft Research Asia / Graduated from Empowerment Informatics Program, University of Tsukuba, Japan. 
+
+I’m a postdoctoral fellow at University of Chicago. I have received my PhD in Human Informatics at University of Tsukuba, Japan in 2019. I am interested in designing experiences in which all people can maximize and share their physical and cognitive capabilities to support each other. I explore the possibility of this interaction in the field of rehabilitation, education, and design. To this end, I design wearable cybernic interfaces which share one’s embodied and social perspectives among people by means of electrical muscle stimulation, exoskeletons, virtual/augmented reality systems. Received more than 40 awards including Microsoft Research Asia Fellowship Award, national grants, and three University Presidential Awards. Review service at ACM SIGCHI, SIGGRAPH, UIST, TEI, IEEE VR, HRI.
+
+Find more information on their [website](https://junis.sakura.ne.jp/wp).
+
+#### Heather Culbertson
+
+<img alt="Heather Culbertson's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/HeatherCulbertson.jpg?raw=true" width="100px" height="auto"/>
+
+Heather Culbertson is a Gabilan Assistant Professor of Computer Science at the University of Southern California. Her research focuses on the design and control of haptic devices and rendering systems, human-robot interaction, and virtual reality. Particularly she is interested in creating haptic interactions that are natural and realistically mimic the touch sensations experienced during interactions with the physical world. Previously, she was a research scientist in the Department of Mechanical Engineering at Stanford University where she worked in the Collaborative Haptics and Robotics in Medicine (CHARM) Lab. She received her PhD in the Department of Mechanical Engineering and Applied Mechanics (MEAM) at the University of Pennsylvania in 2015 working in the Haptics Group, part of the General Robotics, Automation, Sensing and Perception (GRASP) Laboratory. She completed a Masters in MEAM at the University of Pennsylvania in 2013, and earned a BS degree in mechanical engineering at the University of Nevada, Reno in 2010. She is currently serving as the Vice-Chair for Information Dissemination for the IEEE Technical Committee on Haptics. Her awards include a citation for meritorious service as a reviewer for the IEEE Transactions on Haptics, Best Paper at UIST 2017, and the Best Hands-On Demonstration Award at IEEE World Haptics 2013.
+
+Find more information on her [website](https://sites.usc.edu/culbertson/).
+
+## Contents
+
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Getting Started](#getting-started) :book:
+    + [Step 1: Acquiring the Hardware](#step-1-acquiring-the-hardware)
+        - [Primary Electronic Components](#primary-electronic-components)
+        - [Sensors, Actuators, and Microcontroller Modules](#sensors-actuators-and-microcontroller-modules)
+        - [For Connecting Things Together](#for-connecting-things-together)
+        - [Other Electronic Components](#other-electronic-components)
+        - [Non-Electronic Components for Assembling the System](#non-electronic-components-for-assembling-the-system)
+        - [Required Tools](#required-tools)
+        - [Estimated Build Cost](#estimated-build-cost)
+    + [Step 2: Preparing the Hardware](#step-2-preparing-the-hardware)
+        - [Changing ADC Board I2C Address](#changing-adc-board-i2c-address)
+        - [Disconnecting the 10kΩ Potentiometer of the ADC Boards](#disconnecting-the-10kω-potentiometer-of-the-adc-boards)
+        - [Adding Female Jumpers to the Linear Resonant Actuators](#adding-female-jumpers-to-the-linear-resonant-actuators)
+        - [Soldering Wires to Flex and Force Sensors](#soldering-wires-to-flex-and-force-sensors)
+    + [Step 3: Hardwares, Assemble!](#step-3-hardwares-assemble)
+        - [Connecting the Modules to Raspberry Pi 4](#connecting-the-modules-to-raspberry-pi-4)
+        - [Connecting the Sensors to the Qwiic Pi Hat](#connecting-the-sensors-to-the-qwiic-pi-hat)
+        - [Connecting the Syntacts Board and Vibrotactile Actuators](#connecting-the-syntacts-board-and-vibrotactile-actuators)
+    + [Step 4: Loading the Software](#step-4-loading-the-software)
+        - [Installing the Dependencies](#installing-the-dependencies)
+        - [Running the On-Body Gym Server](#running-the-on-body-gym-server)
+    + [Step 5: Put 'em in a Box, Tie 'em with a Ribbon](#step-5-put-em-in-a-box-tie-em-with-a-ribbon)
+- [A User's Guide to Wearing the On-Body Gym](#a-users-guide-to-wearing-the-on-body-gym) :running_shirt_with_sash:
+    + [Preparing Sock Cut-Outs](#preparing-sock-cut-outs)
+    + [Mounting the System](#mounting-the-system)
+- [A Developer's Guide to the On-Body Gym APIs](#a-developers-guide-to-the-on-body-gym-apis) :electric_plug:
+- [On-Body Jukebox](#on-body-jukebox) :notes:
+    + [Features](#features)
+    + [Usage](#usage)
+        - [Installation](#installation)
+        - [Connecting On-Body Jukebox to On-Body Gym](#connecting-on-body-jukebox-to-on-body-gym)
+        - [Uploading Custom Music](#uploading-custom-music)
+- [On-Body VR](#on-body-vr) :video_game:
+- [Acknowledgements](#acknowledgements)
+- [References](#references)
+- [License](#license)
 
 ## Abstract
 
 Impacted by the COVID-19 pandemic, gyms across the globe have either shut down or restricted total capacity. Due to this, everyone has turned to exercising at home regularly. To benefit people with their mental and physical health, we propose a wearable on-body haptic device capable of providing a holistic workout experience at home. Using granular haptic feedback, our proposed system can simulate the feeling of using actual gym equipment. We leverage flex sensors, force sensors, and vibrotactile actuators, all working in tandem to detect workout activity and trigger a granular haptic response to mirror the feedback we receive from various spring-and-pulley based gym machines. The generated granular haptic feedback also motivates free-hand workout routines. Additionally, our system simulates the rhythm of the music using vibrotactile actuators to promote endurance and a positive mood during workouts, allowing users to select from a range of predefined soundtracks, or load their own music. This will be especially useful for people with hearing impairment, who can now enjoy the rhythm of any music while working out. Overall, we have designed this system to encourage all types of people to pursue fitness and to enrich their home workout experience.
 
 ## Introduction
-Introduction goes here.
 
-## Contents
-
-- [Abstract](#abstract)
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-    + [Step 1: Acquiring the Hardware](#step-1-acquiring-the-hardware)
-    + [Step 2: Preparing the Hardware](#step-2-preparing-the-hardware)
-    + [Step 3: Hardwares, Assemble!](#step-3-hardwares-assemble)
-    + [Step 4: Loading the Software](#step-4-loading-the-software)
-    + [Step 5: Put 'em in a Box, Tie 'em with a Ribbon](#step-5-put-em-in-a-box-tie-em-with-a-ribbon)
-- [A User's Guide to Wearing the On-Body Gym](#a-users-guide-to-wearing-the-on-body-gym)
-- [Interacting with the On-Body Gym](#interacting-with-the-on-body-gym)
-- [On-Body Jukebox](#on-body-jukebox)
-- [On-Body VR](#on-body-vr)
-- [A Developer's Guide to the On-Body Gym APIs](#a-developers-guide-to-the-on-body-gym-apis)
-- [Authors](#authors)
-- [Acknowledgements](#acknowledgements)
-- [References](#references)
-- [License](#license)
-
+![Concept Art](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/art/concept_art.png)
 
 # Getting Started
 
@@ -44,52 +140,57 @@ Want to experience On-Body Gym for yourself? Follow our step-by-step guide to bu
 The hardware requirements for building the On-Body Gym are categorised as follows:
 
 ### Primary Electronic Components
-* [Raspberry Pi 4 Microcontroller 8GB](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
-* [Audio Injector Octo 8-Channel Sound Card](http://www.audioinjector.net/rpi-octo-hat)
-* [Syntacts 8-Channel Amplifier Board](https://www.syntacts.org)
+* [Raspberry Pi 4 Microcontroller](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/) | **$35.00**
+* [Audio Injector Octo 8-Channel Sound Card](http://www.audioinjector.net/rpi-octo-hat) | **$58.00**
+* [Syntacts 8-Channel Amplifier Board](https://www.syntacts.org) | **Contact manufacturer for price**
 
 ### Sensors, Actuators, and Microcontroller Modules
-* [SparkFun Qwiic Hat for Raspberry Pi](https://www.sparkfun.com/products/14459)
-* [SparkFun Qwiic 12-Bit 4-Channel ADC](https://www.sparkfun.com/products/15334) (2 count)
-* [Force Sensitive Resistors 0.5"](https://www.sparkfun.com/products/9375) (2 count)
-* [Flex Sensor 4.5"](https://www.sparkfun.com/products/8606) (4 count)
-* [Coin Linear Resonant Actuator](https://www.vibration-motor.com/coin-vibration-motors/coin-linear-resonant-actuators-lra/g1040003d) (8 count)
+* [SparkFun Qwiic Hat for Raspberry Pi](https://www.sparkfun.com/products/14459) | **$6.50**
+* [SparkFun Qwiic 12-Bit 4-Channel ADC](https://www.sparkfun.com/products/15334) (2 count) | **$21.00**
+* [Force Sensitive Resistors 0.5"](https://www.sparkfun.com/products/9375) (2 count) | **$13.90**
+* [Flex Sensor 4.5"](https://www.sparkfun.com/products/8606) (4 count) | **$63.80**
+* [Coin Linear Resonant Actuator](https://www.vibration-motor.com/coin-vibration-motors/coin-linear-resonant-actuators-lra/g1040003d) (8 count) | **$25.36**
 
 ### For Connecting Things Together
-* [2-RCA Male to 3.5mm Male](https://www.amazon.com/eBoot-3-5mm-Audio-Stereo-Adapter/dp/B06XC5KWJN/) (4 count) <br>
+* [2-RCA Male to 3.5mm Male](https://www.amazon.com/eBoot-3-5mm-Audio-Stereo-Adapter/dp/B06XC5KWJN/) (4 count) | **$31.96** <br>
     - **Cable Length Recommendation:** Short, approximately 6 inches in length.
-* [Qwiic Cable](https://www.sparkfun.com/products/14426) (2 count) <br>
+* [Qwiic Cable](https://www.sparkfun.com/products/14426) (2 count) | **$1.90**<br>
     - **Cable Length Recommendation:** Extremely short, approximately 50 mm in length.
-* [Ribbon Cables](https://www.sparkfun.com/products/10647) <br>
+* [Ribbon Cables](https://www.sparkfun.com/products/10647) (2 count) | **$9.90**<br>
     - **Cable Recommentation:** A multi-colored wire strand setup will help in cable management. <br>
     - **Cable Length Recommendation:** Extremely long, at least 30 feet long for a 10-wire pack.
-* [Female Jumper Wires](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) (16 count) <br>
+* [Female Jumper Wires](https://www.amazon.com/40pcs-Female-2-54mm-Jumper-2x40pcs/dp/B00GSE2S98) (16 count) | **$6.59** <br>
     - **Cable Length Recommendation:** As short as can be, only the connector is required with minimal wire (will be soldered to ribbon cables).
-* **[Optional]** [Type-C Cable](https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B08NX7M6MS) <br>
+* **[Optional]** [Type-C Cable](https://www.amazon.com/Charger-Braided-Charging-Compatible-Samsung/dp/B08NX7M6MS) | **$4.99** <br>
     - **Cable Recommentation:** This cable is required only if using a power bank or USB outlet to power Raspberry Pi. <br>
     - **Cable Length Recommendation:** Depends, approximately 2 feet if using a powerbank, otherwise as long as possible if powering through USB-outlet.
-* **[Optional]** [Micro-HDMI to HDMI Cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/) <br>
+* **[Optional]** [Micro-HDMI to HDMI Cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/) | **$5.00** <br>
     - **Cable Recommentation:** This cable is required only if connection to monitor is required. <br>
     - **Cable Length Recommendation:** As per monitor placement.
-* **[Optional]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) <br>
+* **[Optional]** [2x AA Battery Holder + Jumper Headers](https://www.adafruit.com/product/3858) | **$1.95** <br>
     - **Recommentation:** This is only required to power the Syntacts board. Alternatively, a USB cable with exposed VCC and GND wires can also be used along with a power bank or USB-outlet. <br>
 
 ### Other Electronic Components
-* [16GB MicroSDHC Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNS-016G-GN3MN-UHS-I-microSDHC/dp/B074B4P7KD)
-* [1k Ohm Resistor](https://www.sparkfun.com/products/14492) (6 count)
-* **[Optional]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) <br>
+* [16GB MicroSDHC Card](https://www.amazon.com/SanDisk-Ultra-SDSQUNS-016G-GN3MN-UHS-I-microSDHC/dp/B074B4P7KD) | **$6.80**
+* [1k Ohm Resistor](https://www.sparkfun.com/products/14492) (6 count) | **$0.95**
+* **[Optional]** [20000mAh Power Bank](https://www.amazon.com/Portable-26800mah-Ultra-High-High-Performance-Smartphone/dp/B07ZX22KJS) | **$24.25**<br>
     - **Recommendation:** This is HIGHLY RECOMMENDED in order to allow for an untethered experience.
 
 ### Non-Electronic Components for Assembling the System
-* [Knee-Length Socks](https://www.amazon.com/gp/product/B07H2WGKVB) (at least 4 pairs)
-* [Velcro Cable Ties](https://www.amazon.com/gp/product/B001E1Y5O6) (approximately 30 pieces) <br>
+* [Knee-Length Socks](https://www.amazon.com/gp/product/B07H2WGKVB) (at least 4 pairs) | **$13.99**
+* [Velcro Cable Ties](https://www.amazon.com/gp/product/B001E1Y5O6) (approximately 30 pieces) | **$12.49** <br>
     - **Recommendation:** Cable Ties and Socks are used to hold components in place. These are highly recommended, but alternatively any string with significant tensile strength can be used to tie the components on the user's body, not recommended though.
-* [Band-Aid](https://www.amazon.com/gp/product/B00ZQF0Y5K) (each setup needs approximately 10 band-aids per use, purchase accordingly) <br>
+* [Band-Aid](https://www.amazon.com/gp/product/B00ZQF0Y5K) (each setup needs approximately 10 band-aids per use, purchase accordingly) | **$5.99** <br>
     - **Recommendation:** Band-Aids are used for holding components against the skin since they are considered as skin-safe adhesives, but alternatively regular tapes could also be used, not recommended though.
-* Cardboard Box (17mm L x 11mm B x 9mm D)
+* Cardboard Box (17mm L x 11mm B x 9mm D) | **Hopefully free of cost**
 
-### Tools
+### Required Tools
 Assembling the On-Body Gym will require the usual workshop tools which include (but may not be limited to): scissor, screw-drivers, blade, soldering kit, shrink tubes (optional, for wrapping up the soldered-joints), and a heat gun (optional, for shrinking the shrink tube). A cheaper alternative to shrink tubes and heat gun is an electrical tape, which can also be used to wrap up soldered joints.
+
+### Estimated Build Cost
+The mandatory components required to build the On-Body Gym system is estimated to be approximately **$315**, whereas the optional requirements total to approximately **$37**. This puts the total estimated cost for the recommended build to be at approximately **$352**.
+
+**Note:** The above build cost does not take into account the cost of the required tools and the Syntacts board.
 
 ## Step 2: Preparing the Hardware
 Before we start connecting the hardware together, we need to prepare some components first.
@@ -244,6 +345,8 @@ This concludes the primary hardware assembly of On-Body Gym. Now all that's left
 
 ## Step 4: Loading the Software
 We now need to install the Raspbian OS on the Raspberry Pi 4, load all the necessary drivers, softwares, and libraries, and finally load the On-Body Gym software.
+
+### Installing the Dependencies
 1. Install the Raspbian OS and set up the Raspberry Pi 4 system. The [follow tutorial](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) can serve as a great guide to get things started! <br>
 **Note:** Alternatively, Raspbian OS can also be set up headlessly. But for the initial setup, we strongly recommend setting up the Raspberry Pi with the Raspbian OS which comes with a Desktop (and install with a monitor connected) to make the setup much more convenient.
 2. Connect the Raspberry Pi to WiFi.
@@ -432,6 +535,9 @@ Once you've mounted the system, you can now power on the device (by connecting t
 
 **Happy Exercising!**
 
+# A Developer's Guide to the On-Body Gym APIs
+This section contains description about the APIs of the On-Body Gym server.
+
 # On-Body Jukebox
 
 ![On-Body Jukebox Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyJukeboxBanner.png)
@@ -473,87 +579,6 @@ Follow the instructions on the image below to load custom music.
 
 # On-Body VR
 ![On-Body VR Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyVR.png)
-
-# A Developer's Guide to the On-Body Gym APIs
-This section contains description about the APIs of the On-Body Gym server.
-
-# Authors
-This project has been made possible through a collaboration of some amazing people and organization!
-
-## Team
-
-#### Md Aashikur Rahman Azim
-
-<img alt="Aashik's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Aashik.jpg?raw=true" width="100px" height="auto"/>
-
-Md Aashikur Rahman Azim is a third-year computer science Ph.D. student at the University of Virginia (UVa). Aashik is currently working with Professor Seongkook Heo on wearable user interfaces in the context of Human-Computer Interaction (HCI). He received both Bachelor of Science and Master of Science degrees from the Department of Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET) in February 2013 and December 2016, respectively. His research area includes Human-Computer Interaction, Applied Machine Learning, and Embedded Systems.
-
-Find more information on his [website](https://sites.google.com/view/aashikazim/).
-
-#### Archana Narayanan
-
-<img alt="Archana's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Archana.jpg?raw=true" width="100px" height="auto"/>
-
-Archana Narayanan is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
-
-Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
-
-#### Adil Rahman
-
-<img alt="Adil's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Adil.jpg?raw=true" width="100px" height="auto"/>
-
-Adil Rahman is a first-year PhD student at the University of Virginia (UVa). Adil's research interest lies in the field of Human-Computer Interaction, particularly in making devices more accessible to everyone and creating new interaction techniques. Prior to joining the PhD program at UVa, Adil has had a year's worth of experience working with gesture recognition at the Indian Statistical Institute. Adil also holds a BTech (IT) from Heritage Institute of Technology, Kolkata, from where he graduated as a gold-medalist in 2020. In his spare time, Adil loves to play video games, make music, and then play some more video games!
-
-Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
-
-#### Wen Ying
-
-<img alt="Wen's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Wen.jpeg?raw=true" width="100px" height="auto"/>
-
-Wen Ying is a first-year CS PhD student at the University of Virginia. Her study involves experimenting with different types of haptic feedback from which she has had experience with creating virtual haptic feedback using LRA actuators, sensors, boards, etc.
-
-Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglLobY8OH5/view?usp=sharing) for more information.
-
-## Advisor
-
-#### Seongkook Heo
-
-<img alt="Seongkook's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Seongkook.jpg?raw=true" width="100px" height="auto"/>
-
-Seongkook Heo is an Assistant Professor in the Department of Computer Science at the University of Virginia. His research interests span across various areas of human-computer interaction, with an emphasis on interaction techniques and technologies. He was previously a postdoctoral researcher in the DGP Lab at the University of Toronto, where he worked with Prof. Daniel Wigdor. He received his PhD in Computer Science at the KAIST in 2017, advised by Prof. Geehyuk Lee. He was also a research intern at industry research labs, including Samsung Advanced Institute of Technology, Microsoft Research (with Dr. Ken Hinckley), and Autodesk Research (with Dr. Tovi Grossman).
-
-Find more information on his [website](https://seongkookheo.com).
-
-## Chairs
-
-#### Christian Frisson
-
-<img alt="Christian Frissons's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/ChristianFrisson.jpg?raw=true" width="100px" height="auto"/>
-
-Christian Frisson is an associate researcher at the Input Devices and Music Interaction Laboratory (IDMIL) (2021), previously postdoctoral researcher at McGill University with the IDMIL (2019-2020), at the University of Calgary with the Interactions Lab (2017-2018) and at Inria in France with the Mjolnir team (2016-2017). He obtained his PhD at the University of Mons, numediart Institute, in Belgium (2015); his MSc in “Art, Science, Technology” from Institut National Polytechnique de Grenoble with the Association for the Creation and Research on Expression Tools (ACROE), in France (2006); his Masters in Electrical (Metrology) and Mechanical (Acoustics) Engineering from ENSIM in Le Mans, France (2005). 
-Christian Frisson is a researcher in Human-Computer Interaction, with expertise in Information Visualization, Multimedia Information Retrieval, and Tangible/Haptic Interaction. Christian creates and evaluates user interfaces for manipulating multimedia data. Christian favors obtaining replicable, reusable and sustainable results through open-source software, open hardware and open datasets. 
-With his co-authors, Christian obtained the IEEE VIS 2019 Infovis Best Paper award and was selected among 4 finalists for IEEE Haptics Symposium 2020 Most Promising WIP.
-
-Find more information on his [website](https://frisson.re).
-
-#### Jun Nishida
-
-<img alt="Jun Nishida's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/JunNishida.jpg?raw=true" width="100px" height="auto"/>
-
-Jun Nishida is **Currently** Postdoctoral Fellow at University of Chicago & Research Fellow at Japan Society for the Promotion of Science (JSPS PDRA) / **Previously** JSPS Research Fellow (DC1), Project Researcher at Japanese Ministry of Internal Affairs and Communications, SCOPE Innovation Program & PhD Fellow at Microsoft Research Asia / Graduated from Empowerment Informatics Program, University of Tsukuba, Japan. 
-
-I’m a postdoctoral fellow at University of Chicago. I have received my PhD in Human Informatics at University of Tsukuba, Japan in 2019. I am interested in designing experiences in which all people can maximize and share their physical and cognitive capabilities to support each other. I explore the possibility of this interaction in the field of rehabilitation, education, and design. To this end, I design wearable cybernic interfaces which share one’s embodied and social perspectives among people by means of electrical muscle stimulation, exoskeletons, virtual/augmented reality systems. Received more than 40 awards including Microsoft Research Asia Fellowship Award, national grants, and three University Presidential Awards. Review service at ACM SIGCHI, SIGGRAPH, UIST, TEI, IEEE VR, HRI.
-
-Find more information on their [website](https://junis.sakura.ne.jp/wp).
-
-#### Heather Culbertson
-
-<img alt="Heather Culbertson's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/HeatherCulbertson.jpg?raw=true" width="100px" height="auto"/>
-
-Heather Culbertson is a Gabilan Assistant Professor of Computer Science at the University of Southern California. Her research focuses on the design and control of haptic devices and rendering systems, human-robot interaction, and virtual reality. Particularly she is interested in creating haptic interactions that are natural and realistically mimic the touch sensations experienced during interactions with the physical world. Previously, she was a research scientist in the Department of Mechanical Engineering at Stanford University where she worked in the Collaborative Haptics and Robotics in Medicine (CHARM) Lab. She received her PhD in the Department of Mechanical Engineering and Applied Mechanics (MEAM) at the University of Pennsylvania in 2015 working in the Haptics Group, part of the General Robotics, Automation, Sensing and Perception (GRASP) Laboratory. She completed a Masters in MEAM at the University of Pennsylvania in 2013, and earned a BS degree in mechanical engineering at the University of Nevada, Reno in 2010. She is currently serving as the Vice-Chair for Information Dissemination for the IEEE Technical Committee on Haptics. Her awards include a citation for meritorious service as a reviewer for the IEEE Transactions on Haptics, Best Paper at UIST 2017, and the Best Hands-On Demonstration Award at IEEE World Haptics 2013.
-
-Find more information on her [website](https://sites.usc.edu/culbertson/).
-
 
 # Acknowledgements
 SIC chairs would like to thank Evan Pezent, Zane A. Zook and Marcia O'Malley from [MAHI Lab](http://mahilab.rice.edu) at Rice University for having distributed to them 2 [Syntacts](https://www.syntacts.org) kits for the [IROS 2020 Intro to Haptics for XR Tutorial](http://iros-haptics-tutorial.org/). 
