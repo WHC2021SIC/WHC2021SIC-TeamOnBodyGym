@@ -573,7 +573,43 @@ Once you've mounted the system, you can now power on the device (by connecting t
 **Happy Exercising!**
 
 # A Developer's Guide to the On-Body Gym API
-This section contains description about the API of the On-Body Gym server.
+The On-Body Gym system can be deployed as a full-body haptic controller. To this extent, we have developed a RESTful API to aid designers in crafting their own experience using the On-Body Gym system. Using this API, designers can access real-time sensor values, trigger grain vibration on individual actuators, and even set the intensity of vibration on individual actuators.
+
+## API Endpoints
+We define the endpoints for our API functionality here.
+
+* **Real-Time Sensor Values** <br>
+Returns the real-time sensor values of the 6 sensors at the instance of call. <br>
+**API:** `http://<server_ip>:<port>/get_sensor_values` <br>
+**Parameter:** `None` <br>
+**Returns:** String with 6 comma-delineated sensor values. <br>
+**Response Format:** `RH_FSR,LH_FSR,RH_FLEX,LH_FLEX,RL_FLEX,LL_FLEX` <br>
+[`RH`, `LH`, `RL`, and `LL` stand for Right Hand, Left hand, Right Leg, and Left Leg, respectively]
+
+* **Play Grain Vibration** <br>
+Triggers the grain vibration feedback on the specified actuator. <br>
+**API:** `http://<server_ip>:<port>/play_grain` <br>
+**Parameter:** `channel`, defines which channel to play the grain vibration on. Takes values 0 through 7. <br>
+**Returns:** `OK` if channel is provided, `NaN` otherwise.
+
+* **Set Grain Vibration Intensity** <br>
+Sets the intensity of the grain vibration on the specified actuator. <br>
+**API:** `http://<server_ip>:<port>/set_grain_volume` <br>
+**Parameter 1:** `channel`, defines which channel to play the grain vibration on. Takes values 0 through 7. <br>
+**Parameter 2:** `volume`, defines the intensity of the grain vibration. Takes values 0 through 100, with 0 being no vibration and 100 being maximum vibration. <br>
+**Returns:** `OK`
+
+Additional endpoints can be found in the [server file](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/OnBodyGym/server.py).
+
+**Note:** It is strongly advisable to use `11996` as the port value (which is the default value). Also, it is fairly obvious that the On-Body Server needs to be running in order to access the above API endpoints.
+
+## Developer Mode Launcher
+If you're developing a custom interaction for the On-Body Gym system, it might be desirable to disable the default interaction and haptic feedback generation system of the On-Body Gym. To do so, instead of running the server by launching `app.sh`, please run `app_dev.sh`, which launches the PureData system and the server, without launching the default interaction system of the On-Body Gym.
+
+**Note:** Don't forget to grant `app_dev.sh` execution permission using `chmod` before running it.
+
+## Demonstration
+To demonstrate some of the capabilities of our API, we have developed [On-Body Jukebox](#on-body-jukebox) and [On-Body VR](#on-body-vr), both of which are built over the API to communicate with the On-Body Gym system.
 
 # On-Body Jukebox
 
