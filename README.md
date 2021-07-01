@@ -122,6 +122,10 @@ Find more information on her [website](https://sites.usc.edu/culbertson/).
         - [Connecting On-Body Jukebox to On-Body Gym](#connecting-on-body-jukebox-to-on-body-gym)
         - [Uploading Custom Music](#uploading-custom-music)
 - [On-Body VR](#on-body-vr) :video_game:
+    + [Usage](#usage)
+        - [Installation](#installation)
+        - [Connecting On-Body VR to On-Body Gym](#connecting-on-body-vr-to-on-body-gym)
+        - [Running On-Body VR](#running-on-body-vr)
 - [Acknowledgements](#acknowledgements)
 - [References](#references)
 - [License](#license)
@@ -640,7 +644,7 @@ On-Body Jukebox is an Android companion application for our On-Body Gym system w
 In this section, we have listed instructions to get started with the basic functionalities of the application.
 
 ### Installation
-Download the latest `.apk` binary file from [releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases/) and open it on your Android device to install On-Body Jukebox. <br>
+Download the latest `on_body_jukebox_<version>.apk` file from [releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases/) and open it on your Android device to install On-Body Jukebox. <br>
 **Note:** The Android device must have appropriate permission to install applications from unknown sources in order to successfully install the application.
 
 ### Connecting On-Body Jukebox to On-Body Gym
@@ -655,6 +659,30 @@ Follow the instructions on the image below to load custom music.
 
 # On-Body VR
 ![On-Body VR Banner](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/architecture/OnBodyVR.png)
+
+To demonstrate the capabilities of the On-Body Gym system to be deployed as a full-body haptic controller, we have developed On-Body VR, a virtual reality application in which users can both feel and visualize the act of squeezing a hand-grip, without actually squeezing a hand-grip. This application intensifies the illusion of deformation by providing an immersive visual result alongside the haptic feedback which the user receives on their palm through our On-Body Gym system.
+
+**Note:** On-Body Gym does not mandatorily require this application to function as a standalone system. This application is just an add-on to demonstrate additional features that can be achieved with the On-Body Gym.
+
+## Usage
+In this section, we have listed instructions to install and use the On-Body VR application.
+
+### Installation
+Download the latest `on_body_vr_<version>.zip` file from [releases](https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/releases/) and then extract it on your Windows computer.
+
+### Connecting On-Body VR to On-Body Gym
+Before proceeding, ensure that the Raspberry Pi is connected to a network and that the On-Body Gym server is [running](#running-the-on-body-gym-server) on it. Note down the IP address of the Raspberry Pi device. Now, navigate to the folder where On-Body VR has been extracted. Then, navigate to `<extracted_dir>/OnBodyVr_Data/` and open `config.ini` in a text editor. In this file, you should see something like this:
+```
+[main]
+ip = 192.168.0.2
+port = 11996
+```
+Edit the `ip` and `port` parameters in this file to match the IP and port of the On-Body Gym server.
+
+### Running On-Body VR
+This application requires **Oculus Rift S** to work. To run this application, simply navigate to the installation directory and execute `OnBodyVR.exe`. If the installation is done correctly and the system is connected to the On-Body Gym server, `On-Body VR: Connected To Server` message should appear written on the sky, and you should now be able to squeeze the rigid VR controller and feel (and see!) yourself squeezing an actual hand-grip!
+
+**Note:** In case you see the error message `ERROR: Request Timeout` on the sky, it means that the VR application could not connect to the server. In this case, ensure that the server is running, and that the VR application configuration file has the correct IP address and port.
 
 # Acknowledgements
 SIC chairs would like to thank Evan Pezent, Zane A. Zook and Marcia O'Malley from [MAHI Lab](http://mahilab.rice.edu) at Rice University for having distributed to them 2 [Syntacts](https://www.syntacts.org) kits for the [IROS 2020 Intro to Haptics for XR Tutorial](http://iros-haptics-tutorial.org/). 
