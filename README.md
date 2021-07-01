@@ -8,6 +8,14 @@ This project has been made possible through a collaboration of some amazing peop
 
 ## Team
 
+#### Adil Rahman
+
+<img alt="Adil's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Adil.jpg?raw=true" width="100px" height="auto"/>
+
+Adil Rahman is a first-year CS PhD student at the University of Virginia (UVa) advised by Professor Seongkook Heo. Adil's research interest lies in the field of Human-Computer Interaction, particularly in making devices more accessible to everyone and creating new interaction techniques. Prior to joining the PhD program at UVa, Adil has had a year's worth of experience working with gesture recognition at the Indian Statistical Institute. Adil also holds a BTech (IT) from Heritage Institute of Technology, Kolkata, from where he graduated as a gold-medalist in 2020. In his spare time, Adil loves to play video games, make music, and then play some more video games!
+
+Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
+
 #### Md Aashikur Rahman Azim
 
 <img alt="Aashik's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Aashik.jpg?raw=true" width="100px" height="auto"/>
@@ -16,22 +24,6 @@ Md Aashikur Rahman Azim is a third-year computer science Ph.D. student at the Un
 
 Find more information on his [website](https://sites.google.com/view/aashikazim/).
 
-#### Archana Narayanan
-
-<img alt="Archana's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Archana.jpg?raw=true" width="100px" height="auto"/>
-
-Archana Narayanan is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
-
-Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
-
-#### Adil Rahman
-
-<img alt="Adil's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Adil.jpg?raw=true" width="100px" height="auto"/>
-
-Adil Rahman is a first-year PhD student at the University of Virginia (UVa). Adil's research interest lies in the field of Human-Computer Interaction, particularly in making devices more accessible to everyone and creating new interaction techniques. Prior to joining the PhD program at UVa, Adil has had a year's worth of experience working with gesture recognition at the Indian Statistical Institute. Adil also holds a BTech (IT) from Heritage Institute of Technology, Kolkata, from where he graduated as a gold-medalist in 2020. In his spare time, Adil loves to play video games, make music, and then play some more video games!
-
-Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additional information on his [CV](https://adildsw.github.io/docs/Adil_Rahman_s_Resume.pdf).
-
 #### Wen Ying
 
 <img alt="Wen's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Wen.jpeg?raw=true" width="100px" height="auto"/>
@@ -39,6 +31,14 @@ Explore Adil's work on his [GitHub](https://github.com/adildsw) page and additio
 Wen Ying is a first-year CS PhD student at the University of Virginia. Her study involves experimenting with different types of haptic feedback from which she has had experience with creating virtual haptic feedback using LRA actuators, sensors, boards, etc.
 
 Check her [portfolio](https://drive.google.com/file/d/1v74Rjerr8_QPv-6RMAg9XmglLobY8OH5/view?usp=sharing) for more information.
+
+#### Archana Narayanan
+
+<img alt="Archana's picture" src="https://github.com/WHC2021SIC/WHC2021SIC-TeamOnBodyGym/blob/master/images/portraits/Archana.jpg?raw=true" width="100px" height="auto"/>
+
+Archana Narayanan is an MS student in Computer Engineering at the University of Virginia, Charlottesville. She is also a part of the Human Computer Interaction Lab at UVA where her current research focuses on the development of a multidimensional haptic feedback device based on asymmetric vibrations. Her research interests include Embedded Systems, Hardware Engineering and Human Computer Interaction. Prior to joining the master’s program, she was a project assistant at the Indian Institute of Science, Bangalore where she built data acquisition systems for spectroscopy using FPGA’s. In the past, she has worked on multiple projects involving FPGA’s,IoT,analog and digital devices/circuits, multiple sensors, microcontrollers, and actuators. 
+
+Find more information on her [website](https://archana95in.wixsite.com/archananarayanan).
 
 ## Advisor
 
