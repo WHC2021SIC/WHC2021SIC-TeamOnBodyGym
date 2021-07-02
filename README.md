@@ -171,7 +171,7 @@ You can build your own On-Body Gym system following our [Getting Started](#getti
 While the entire system costs approximately $350 to build, most of the equipments used are either extremely common tech or household items, or should be fairly easy to get, reducing the effective build cost significantly. You can check the hardware requirements [here](#step-1-acquiring-the-hardware).
 
 ### Q: I am a developer. Can I contribute to this project? 
-Definitely! All contributions are welcome! You can open an issue to discuss the changes, and use pull requests to send in the updates. Also, be sure to check out the [developer's guide](#a-developers-guide-to-the-on-body-gym-apis) to learn more about how you can craft your own interaction using our API!
+Definitely! All contributions are welcome! You can open an issue to discuss the changes, and use pull requests to send in the updates. Also, be sure to check out the [developer's guide](#a-developers-guide-to-the-on-body-gym-api) to learn more about how you can craft your own interaction using our API!
 
 # Getting Started
 
@@ -475,7 +475,7 @@ Now that the hardware is assembled together and the softwares are loaded, we can
 3. Insert two knee-length socks, one in each slit, and then tie the ends of both the socks together inside the box to form one very long, dyfunctional sock (refer image above). <br>
 **Note:** Leave the outer end of the sock as is. We will use this to tie the device to our body over our waist.
 4. Write `R` with a marker on the right side of the box which contains the slit. Similarly, write `L` on the left side of the box which contains the other slit.
-5. **[Ultra Important Step]** Referring to the [actuator](#connecting-the-syntacts-board-and-vibrotactile-actuators) and [sensor](#connecting-the-syntacts-board-and-vibrotactile-actuators) tables above, separate all the sensors and actuators that go on the right side of the body from those that go on the left side of the body. Once the sensors and actuators are categorised into two parts, left and right, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `R`. Similarly, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `L`.
+5. **[Ultra Important Step]** Referring to the [actuator](#connecting-the-syntacts-board-and-vibrotactile-actuators) and [sensor](#connecting-the-sensors-to-the-qwiic-pi-hat) tables above, separate all the sensors and actuators that go on the right side of the body from those that go on the left side of the body. Once the sensors and actuators are categorised into two parts, left and right, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `R`. Similarly, insert the sensors and actuators corresponding to the right side of the body through the box slit (from inside to outside of the box) on the side marked `L`.
 6. **[Optional]** Wrap the cables on each end with a cable tie to keep things clean and tidy.
 7. Plug in a Type-C USB on the Raspberry Pi, and a USB-based power cable on the Syntacts board, and then take the other ends of those wires out from either of the slit (from inside to outside of the box).
 8. Once the sensors/actuators of the left and right side are segregated, it is now time to put the hardware in the box.
@@ -689,7 +689,6 @@ SIC chairs would like to thank Evan Pezent, Zane A. Zook and Marcia O'Malley fro
 SIC co-chair Christian Frisson would like to thank Edu Meneses and Johnty Wang from [IDMIL](http://idmil.org) at McGill University for their recommendations on Raspberry Pi hats for audio and sensors.
 
 Team On-Body Gym would like to thank [Kuntal Podder](https://kuntal013.artstation.com) for making the hand-grip 3D model for the virtual reality application. We would also like to thank the WHC 2021 SIC chairs for providing us with the opportunity (and of course the amazing hardware kit)!
-
 
 # References
 1. Seongkook Heo, Jaeyeon Lee, and Daniel Wigdor. 2019. PseudoBend: Producing Haptic Illusions of Stretching, Bending, and Twisting Using Grain Vibrations. In <i>Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology</i> (<i>UIST '19</i>). Association for Computing Machinery, New York, NY, USA, 803–813. DOI:https://doi.org/10.1145/3332165.3347941
